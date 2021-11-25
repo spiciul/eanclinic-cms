@@ -1,0 +1,26 @@
+<div class="p-8 bg-indigo-900 overflow-hidden rounded-3xl">
+    <div class="grid grid-cols-2 gap-8">
+        <div class="col-span-1 flex flex-col h-full justify-center">
+            <p class="text-sm text-wwhite mt-4 flex items-center">
+                <time datetime="{{ date format="Y-m-d" }}">{{ date }}</time>
+            </p>
+            <div class="py-6 px-8 text-white">
+                <h3 class="font-serif font-normal text-3xl">
+                    <a href="{{ url }}" title="{{ title }}">
+                        {{ title  }}
+                    </a>
+                </h3>
+                <p class="mt-4 text-base text-gray-100 leading-normal font-sans">{{ intro }}</p>
+                <div class="mt-8">
+                    {{ partial:components/button label="Citeste articulul" link_type="url" :url="url" inverted="true" }}
+                </div>
+            </div>
+        </div>
+        <div class="col-span-1  relative">
+            <div class="block overflow-hidden aspect-w-4 aspect-h-3 rounded-3xl shadow-xl">
+                {{ partial:components/picture :image="hero_image" class="rounded-xl mx-auto" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+            </div>
+            <a href="{{ url }}" class="absolute w-full h-full inset-0"><span class="sr-only">{{ title }}</span></a>
+        </div>
+    </div>
+</div>

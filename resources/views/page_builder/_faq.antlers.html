@@ -1,0 +1,86 @@
+{{#
+	@name FAQ
+	@desc The article page builder block.
+    @set page.page_builder.faq
+#}}
+
+
+<section class="py-8 md:py-8 lg:py-12">
+    <x-container>
+        <div class="grid md:grid-cols-2 gap-y-8 gap-x-8 2xl:gap-x-12">
+            <div class="col-span-1">
+                <div class="flex flex-col h-full justify-center items-center md:items-start max-w-lg text-center md:text-left">
+                    <h2 class="text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-serif text-indigo-900">
+                        {{ __('Întrebări frecvente') }}
+                    </h2>
+                    <p class="mt-8 text-indigo-400"> {{ __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.') }}</p>
+                    <p class="mt-8 text-indigo-400 max-w-sm">
+                        Pentru orice nelămuriri sună-ne la
+                        <a href="tel:{{ config('settings.phone_number') }}" class="font-bold text-indigo-900" rel="noopener">{{ config('settings.phone_number') }}</a>
+                        sau  lasă-ne un mesaj la
+                        <a href="tel:{{ config('settings.email_address') }}" class="font-bold text-indigo-900" rel="noopener">{{ config('settings.email_address') }}</a>
+                    </p>
+                    <div class="mt-8 md:mt-10 xl:mt-12 ">
+                        <x-button-link href="mailto:{{ config('settings.email_address') }}" >trimite-ne un mesaj</x-button-link>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="max-w-3xl mx-auto">
+                    <dl class="mt-4 md:mt-8 space-y-3" x-data="{ currentQ: 1 }" x-cloak>
+                        <div class="p-1 md:p-2  transition-colors duration-300 ease-in-out">
+                            <dt class="text-lg mr-8 md:mr-0">
+                                <button
+                                    @click="currentQ = 1"
+                                    type="button"
+                                    :class="{'text-white bg-gradient-to-r from-yellow-gold-400 to-yellow-gold-900' : currentQ === 1, 'border border-indigo-200 text-indigo-400' : ( currentQ !== 1)  }"
+                                    class="w-full max-w-md px-4 py-2 inline-flex text-left justify-start outline-none focus:outline-none overflow-hidden rounded-tl-3xl rounded-r-3xl  text-sm"
+                                    aria-controls="currentQ-1"
+                                    :aria-expanded="currentQ === 1">
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, voluptates ?
+                                    </span>
+                                </button>
+                            </dt
+                              >
+                            <dd
+                                :class="{ 'block' : currentQ === 1, 'hidden' : currentQ !== 1 }"
+                                class="ml-8 md:ml-0 mt-2.5 px-4 py-5 bg-indigo-900 rounded-l-3xl rounded-tr-3xl shadow-xl " id="faq-0">
+                                <div class="text-sm text-white opacity-90 transition-all duration-300 ease-in-out space-y-2.5 ">
+                                    <p>I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                                    <p>I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet cupiditate deleniti deserunt dolorum et facere facilis itaque libero nam, neque perspiciatis quas quo reiciendis sequi tempore totam veritatis voluptas.</p>
+                                </div>
+                            </dd>
+                        </div>
+                        <div class="p-1 md:p-2 transition-colors duration-300 ease-in-out">
+                            <dt class="text-lg mr-8 md:mr-0">
+                                <button
+                                    @click="currentQ = 2"
+                                    type="button"
+                                    :class="{'text-white bg-gradient-to-r from-yellow-gold-400 to-yellow-gold-900' : currentQ === 2, 'border border-indigo-200 text-indigo-400' : ( currentQ !== 2)  }"
+                                    class="w-full max-w-md px-4 py-2 inline-flex text-left justify-start outline-none focus:outline-none overflow-hidden rounded-tl-3xl rounded-r-3xl  text-sm"
+                                    aria-controls="currentQ-2"
+                                    :aria-expanded="currentQ === 2">
+                                    <span >
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.?
+                                    </span>
+                                </button>
+                            </dt
+                            >
+                            <dd
+                                :class="{ 'block' : currentQ === 2, 'hidden' : currentQ !== 2 }"
+                                class="ml-8 md:ml-0 mt-2.5 px-4 py-5 bg-indigo-900 rounded-l-3xl rounded-tr-3xl shadow-xl " id="faq-0">
+                                <div class="text-sm text-white opacity-90 transition-all duration-300 ease-in-out space-y-2.5 ">
+                                    <p>I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                                    <p>I don&#039;t know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet cupiditate deleniti deserunt dolorum et facere facilis itaque libero nam, neque perspiciatis quas quo reiciendis sequi tempore totam veritatis voluptas.</p>
+                                </div>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </x-container>
+</section>

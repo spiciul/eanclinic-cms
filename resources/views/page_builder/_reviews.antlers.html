@@ -1,0 +1,15 @@
+{{#
+	@name reviews
+	@desc The reviews page builder block.
+    @set page.page_builder.reviews
+#}}
+
+<section class="fluid-container grid md:grid-cols-12 gap-8">
+    {{ partial:typography/h3 class="md:col-span-12 text-center" }}
+    <h4>Acestea sunt parerile:</h4>
+    {{ collection:reviews as="reviews" }}
+        {{ reviews}}
+            <li>{{ title }} - {{ author }}</li>
+        {{ /reviews }}
+    {{ /collection:reviews }}
+</section>

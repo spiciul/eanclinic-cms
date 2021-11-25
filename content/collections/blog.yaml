@@ -1,0 +1,10 @@
+title: Blog
+route: '/blog/{slug}'
+template: blog.show
+mount: 5ea849c9-e2c6-44cd-9a50-d2bfc9af77e4
+revisions: false
+sort_dir: asc
+date: true
+date_behavior:
+  past: public
+  future: private

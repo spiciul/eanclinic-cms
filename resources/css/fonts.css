@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('/assets/static/fonts/YesevaOne-Regular.eot');
+    src: url('/assets/static/fonts/YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/static/fonts/YesevaOne-Regular.ttf') format('truetype'),
+    url('/assets/static/fonts/YesevaOne-Regular.woff') format('woff'),
+    url('/assets/static/fonts/YesevaOne-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "Yeseva One";
+        src:   url('/assets/static/fonts/YesevaOne-Regular.svg#YesevaOne-Regular') format('svg');
+    }
+}
+
+
+@font-face {
+    font-family: 'OpenSauceSans';
+    src: url('/assets/static/fonts/OpenSauceSans-Regular.eot');
+    src: url('/assets/static/fonts/OpenSauceSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/static/fonts/OpenSauceSans-Regular.ttf') format('truetype'),
+    url('/assets/static/fonts/OpenSauceSans-Regular.woff') format('woff'),
+    url('/assets/static/fonts/OpenSauceSans-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 400;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "OpenSauceSans";
+        src:   url('/assets/static/fonts/OpenSauceSans-Regular.svg#OpenSauceSans-Regular') format('svg');
+    }
+}
+
+@font-face {
+    font-family: 'OpenSauceSans';
+    src: url('/assets/static/fonts/OpenSauceSans-Medium.eot');
+    src: url('/assets/static/fonts/OpenSauceSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/assets/static/fonts/OpenSauceSans-Medium.ttf') format('truetype'),
+    url('/assets/static/fonts/OpenSauceSans-Medium.woff') format('woff'),
+    url('/assets/static/fonts/OpenSauceSans-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 500;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "OpenSauceSans";
+        src:   url('/assets/static/fonts/OpenSauceSans-Medium.svg#OpenSauceSans-Medium') format('svg');
+    }
+}
+
+
+@font-face {
+    font-family: 'OpenSauceSans';
+    src: url('/assets/static/fonts/OpenSauceSans-Bold.eot');
+    src: url('/assets/static/fonts/OpenSauceSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/static/fonts/OpenSauceSans-Bold.ttf') format('truetype'),
+    url('/assets/static/fonts/OpenSauceSans-Bold.woff') format('woff'),
+    url('/assets/static/fonts/OpenSauceSans-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 700;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "OpenSauceSans";
+        src:   url('/assets/static/fonts/OpenSauceSans-Bold.svg#OpenSauceSans-Bold') format('svg');
+    }
+}
+
+
+@font-face {
+    font-family: 'OpenSauceSans';
+    src: url('/assets/static/fonts/OpenSauceSans-ExtraBold.eot');
+    src: url('/assets/static/fonts/OpenSauceSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('/assets/static/fonts/OpenSauceSans-ExtraBold.ttf') format('truetype'),
+    url('/assets/static/fonts/OpenSauceSans-ExtraBold.woff') format('woff'),
+    url('/assets/static/fonts/OpenSauceSans-ExtraBold.woff2') format('woff2');
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 800;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "OpenSauceSans";
+        src:   url('/assets/static/fonts/OpenSauceSans-ExtraBold.svg#OpenSauceSans-ExtraBold') format('svg');
+    }
+}
+
+
+@font-face {
+    font-family: 'OpenSauceSans';
+    src: url('/assets/static/fonts/OpenSauceSans-Black.eot');
+    src: url('/assets/static/fonts/OpenSauceSans-Black.eot?#iefix') format('embedded-opentype'),
+    url('/assets/static/fonts/OpenSauceSans-Black.ttf') format('truetype'),
+    url('/assets/static/fonts/OpenSauceSans-Black.woff') format('woff'),
+    url('/assets/static/fonts/OpenSauceSans-Black.woff2') format('woff2');
+    font-style: normal;
+    font-display: fallback;
+    font-weight: 900;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "OpenSauceSans";
+        src:   url('/assets/static/fonts/OpenSauceSans-Black.svg#OpenSauceSans-Black') format('svg');
+    }
+}

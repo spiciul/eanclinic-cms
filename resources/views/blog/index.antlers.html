@@ -1,0 +1,40 @@
+<article class="pt-24 lg:pt-32 max-w-7xl mx-auto px-3">
+    <header class="max-w-xl">
+        {{ partial:typography/h2 content="Blog" }}
+        <p class="mt-6 text-indigo-400 font-normal"> Afla mai multte despre lumea medicala </p>
+    </header>
+
+    {{ collection:blog as="posts" paginate="12" }}
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-8">
+            {{ posts }}
+                {{ if first }}
+                    <div class="md:col-span-4 mb-12 ">
+                        {{ partial:blog/card-oversized oversized="true" }}
+                    </div>
+
+                {{ else }}
+
+                    <div class="md:col-span-2">
+                        {{ partial:blog/card oversized="false" }}
+                    </div>
+
+                {{ /if }}
+            {{ /posts }}
+        </section>
+
+    {{ paginate }}
+        {{ if prev_page || next_page }}
+        <section class="flex space-x-8 justify-center text-xl pt-16 font-bold">
+            {{ if prev_page }}
+                <a href="{{ prev_page }}"><span class="squiggle">&larr;</span> Newer articles</a>
+            {{ /if }}
+            {{ if next_page }}
+                <a href="{{ next_page }}">Older articles <span class="squiggle">&rarr;</span></a>
+            {{ /if }}
+        </section>
+        {{ /if }}
+    {{ /paginate }}
+
+    {{ /collection:blog }}
+</article>

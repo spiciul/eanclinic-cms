@@ -1,0 +1,135 @@
+<section class="pt-24 lg:pt-32">
+    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 md:gap-x-12">
+            <div class="col-span-1">
+                <div class="h-full flex flex-col justify-center md:space-y-8">
+                    <p class="hidden md:block uppercase text-indigo-400 font-bold"> despre noi </p>
+                    {{ partial:typography/h2 content="Siguranța actului medical, la cea mai înaltă calitate." }}
+                    <p class="mt-6 text-indigo-400 font-normal"> Aceasta este misiunea EAN Clinic.</p>
+                </div>
+            </div>
+            <div class="col-span-1 mt-12 ">
+                <div class="block overflow-hidden aspect-w-4 aspect-h-4 rounded-3xl shadow-xl">
+                    {{ partial:components/picture :image="image_5" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                </div>
+            </div>
+        </div>
+    </x-container>
+</section>
+
+<section class="py-6 lg:py-12 gradient-light-indigo">
+    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 ">
+            <div class="mt-12 md:mt-0 col-span-1 order-2 md:order-1 space-y-12 lg:space-y-16 ">
+                <div class="md:ml-auto md:max-w-64 lg:max-w-sm  ">
+                    <div class=" gs_reveal  block overflow-hidden aspect-w-4 aspect-h-4 rounded-3xl shadow-xl ">
+                        {{ partial:components/picture :image="image_6" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+                <div class="mx-auto max-w-md ">
+                    <div class="gs_reveal block overflow-hidden aspect-w-4 aspect-h-4 rounded-3xl shadow-xl">
+                        {{ partial:components/picture :image="image_7" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 order-1 md:order-2 delayed-section">
+                <div class="mx-auto max-w-md flex flex-col pt-8 md:pt-16 lg:pt-24 space-y-6 lg:space-y-8 text-wrapper">
+                    <h3 class="text-4xl xl:text-5xl font-serif font-normal text-indigo-900">Viziunea noastră</h3>
+                    <p class="mt-6 xl:mt-8 text-indigo-400 font-normal">
+                        EAN Clinic livreaza experienta unica de cel mai bun camarad in drumul spre sanatate.
+                    </p>
+                    <p class="mt-6 xl:mt-8 text-indigo-400 font-normal">
+                        Specialitatile medicale unite si cunostintele pe care le avem ne-au permis sa revolutionam abordarea problemelor de sanatate ale pacientului.
+                    </p>
+                    <p class="mt-6 xl:mt-8 text-indigo-400 font-normal">
+                        Inca din 2015 am inceput sa intelegem ca nevoile pacientului sunt complexe trebuie diagnosticate si tratate in totalitate.
+                    </p>
+                    <p class="mt-6 xl:mt-8 text-indigo-400 font-normal">
+                        De aceea conceptul de full face recovery a iesit la suprafata cunostintelor medicale unind estetica cu functionalitatea faciala si dentara.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-6 md:pt-16 lg:py-12 gradient-light-indigo    ">
+    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12">
+            <div class="col-span-1 space-y-8">
+                <div class="space-y-6 lg:space-y-8 mx-auto max-w-md">
+                    <div class="flex md:items-start space-x-4 lg:space-x-6 xl:space-x-8">
+                        <div class="w-16 h-16 flex-shrink-0">
+                           {{ svg:idea }}
+                        </div>
+                        <div class="space-y-2 md:space-y-4">
+                            <h4 class="text-2xl md:text-3xl lg:text-4xl text-indigo-900 font-serif">Inovația</h4>
+                            <p class="text-indigo-400 text-base">Îmbunatatim si infuzam cu energie vietile celor pe care ii tratam.</p>
+                        </div>
+                    </div>
+                    <div class="flex md:items-start space-x-4 lg:space-x-6">
+                        <div class="w-16 h-16 flex-shrink-0">
+                            {{ svg:talent }}
+                        </div>
+                        <div class="space-y-2 md:space-y-4">
+                            <h4 class="text-2xl md:text-3xl lg:text-4xl text-indigo-900 font-serif">Excelența</h4>
+                            <p class="text-indigo-400 text-base">Servicii de cea mai inalta calitate pot fi livrate doar cu efort din partea noastra, experienta cu pacientul am imbunatatit-o constant incepand cu anul 2009.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="mx-auto max-w-lg mt-16 md:-mt-36 lg:-mt-72">
+                    <div class="gs_reveal  block overflow-hidden aspect-w-3 aspect-h-4 rounded-3xl shadow-xl">
+                        {{ partial:components/picture :image="image_6" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 py-12">
+            <div class="col-span-1 space-y-12 lg:space-y-16">
+                <div class="md:ml-auto max-w-64 lg:max-w-sm">
+                    <div class="gs_reveal  block overflow-hidden aspect-w-4 aspect-h-3 rounded-3xl shadow-xl">
+                        {{ partial:components/picture :image="image_9" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+                <div class="mx-auto max-w-md">
+                    <div class="gs_reveal  block overflow-hidden aspect-w-4 aspect-h-3 rounded-3xl shadow-xl">
+                        {{ partial:components/picture :image="image_10" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <div class="mt-12 md:mt-0 flex flex-col justify-center h-full space-y-6 lg:space-y-8 mx-auto max-w-md">
+                    <div class="flex md:items-start space-x-4 lg:space-x-6">
+                        <div class="w-16 h-16 flex-shrink-0">
+                            {{ svg:heart }}
+                        </div>
+                        <div class="space-y-2 md:space-y-4">
+                            {{ partial:typography/h4 content="Compasiunea" }}
+                            <p class="text-indigo-400 text-base">Tratam nu doar pacientul ci membrul al familiei, prietenul, colegul.</p>
+                        </div>
+                    </div>
+                    <div class="flex md:items-start space-x-4 lg:space-x-6">
+                        <div class="w-16 h-16 flex-shrink-0">
+                           {{ svg:deal }}
+                        </div>
+                        <div class="space-y-2 md:space-y-4">
+                            {{ partial:typography/h4 content="Respectul" }}
+                            <p class="text-indigo-400 text-base">Tratam pacientul oferindu-i demnitate.</p>
+                        </div>
+                    </div>
+                    <div class="flex md:items-start space-x-4 lg:space-x-6">
+                        <div class="w-16 h-16 flex-shrink-0">
+                            {{ svg:human }}
+                        </div>
+                        <div class="space-y-2 md:space-y-4">
+                            {{ partial:typography/h4 content="Integritatea" }}
+                            <p class="text-indigo-400 text-base">Avem cele mai inalte standarde de profesionalism, etica si responsabilitate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

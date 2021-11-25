@@ -1,0 +1,46 @@
+title: Services
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+            - 'max:100'
+          display: 'Denumire serviciu'
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          display: 'Descriere serviciu'
+          instructions_position: above
+          listable: hidden
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          validate:
+            - required
+            - 'max:255'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

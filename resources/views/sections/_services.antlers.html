@@ -1,0 +1,34 @@
+<section class="py-6 md:py-8 lg:py-12 xl:py-16 gradient-light-indigo">
+    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-12">
+            <div class="col-span-1">
+                <h3 class="text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-serif font-normal text-indigo-900 text-center md:text-left">Cum te <br/>putem ajuta?</h3>
+
+                {{ collection:services as="services" }}
+                    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-4 lg:gap-x-8 lg:gap-y-8">
+                        {{ services }}
+                            {{ partial:components/service_cell :title="title" :content="content" }}
+                        {{ /services }}
+                    </div>
+                {{ /collection:services }}
+
+                <p class="mt-8 text-indigo-400 max-w-md text-center md:text-left 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eligendi excepturi facere illo libero sint vero. Aut inventore nisi quia.</p>
+            </div>
+
+            <div class="col-span-1">
+                <div class="mt-12 md:mt-0 max-w-lg 2xl:max-w-2xl ml-auto">
+                    <div class="block overflow-hidden aspect-h-4 aspect-w-3 shadow-xl rounded-3xl">
+                        {{ partial:components/picture image="eanclinic-face-1_600x.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+
+                    <div class="mt-8 text-center px-6">
+                        <blockquote class="text-indigo-900 text-2xl font-serif ">
+                            "Medicina este știința, arta și conștiința încălzite de iubirea față de oameni."
+                        </blockquote>
+                        <p class="mt-3 font-normal text-indigo-900 text-lg">Iuliu Hateganu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

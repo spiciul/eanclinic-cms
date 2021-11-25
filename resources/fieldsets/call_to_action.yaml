@@ -1,0 +1,36 @@
+title: 'Call to action'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Title
+      validate:
+        - required
+  -
+    handle: text
+    field: common.text_plain
+    config:
+      validate:
+        - required
+  -
+        handle: main_image
+        field:
+          mode: grid
+          container: assets
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          listable: hidden
+          display: 'Main Image'
+  -
+    handle: section_button
+    field:
+      type: section
+      display: Button
+  -
+    import: buttons

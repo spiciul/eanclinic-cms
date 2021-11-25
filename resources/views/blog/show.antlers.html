@@ -1,0 +1,53 @@
+<article class="pt-24">
+    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <header class="mb-12 mx-auto max-w-4xl">
+            <div class="flex items-center justify-center">
+                <div class="text-left">
+                    {{ if author }}
+                        <div>
+                            <a class="font-bold no-underline" href="/authors/{{ author:handle }}">
+                                <span class="bg-clip-text text-transparent bg-gradient-to-r from-hot-pink to-purple-500">
+                                    {{ author:name }}
+                                </span>
+                            </a>
+                    </div>
+                    {{ /if }}
+                    <time datetime="{{ date format="Y-m-d" }}">{{ date }}</time>
+                    <div class="mt-8">
+                        {{ partial:typography/h2 :content="title" }}
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        {{ if youtube_url }}
+
+             <div class="max-w-5xl mx-auto block overflow-hidden 2 rounded-3xl shadow-xl">
+                {{ partial:components/video :youtube_url="youtube_url"}}
+            </div>
+
+            {{ else }}
+
+            <div class="block overflow-hidden aspect-w-4 aspect-h-2 rounded-3xl shadow-xl">
+                {{ partial:components/picture :image="hero_image" class="rounded-xl mx-auto" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+            </div>
+
+        {{ /if }}
+
+        <section class="max-w-4xl mx-auto py-6 lg:py-12 content">
+            {{ main_content }}
+                {{ if type == "text" }}
+                    {{ text }}
+                {{ elseif type == "image" }}
+                    <figure>
+                        <img src="{{ image }}" alt="{{ caption }}" />
+                        <figcaption>{{ caption }}</figcaption>
+                    </figure>
+                {{ /if }}
+            {{ /main_content }}
+        </section>
+    </div>
+</article>
+

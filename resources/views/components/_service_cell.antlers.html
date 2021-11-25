@@ -1,0 +1,40 @@
+{{#
+	@name Service
+	@desc For use in service section
+#}}
+
+<div
+x-data="{ show: false}"
+x-cloak
+class="relative group px-4 lg:px-12 py-6 flex items-center justify-center h-full 2xl:h-40 border-2 border-indigo-200 hover:border-2 hover:border-yellow-gold-400 rounded-2xl hover:bg-gradient-to-r from-yellow-gold-400 to-yellow-gold-900 transition-all ease-in duration-200">
+<p class="font-serif text-lg lg:text-2xl 2xl:text-3xl text-indigo-900 group-hover:text-white text-center">
+    {{ title }}
+</p>
+<button
+    @click="show = true"
+    type="button"
+    class="absolute right-2 top-2 w-8 h-8 p-1 text-indigo-900 group-hover:text-white transition-colors ease-in duration-200">
+        <span class="w-6 h-6 ">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                fill="currentColor"/>
+            <path d="M11 11h2v6h-2v-6zm0-4h2v2h-2V7z" fill="currentColor"/>
+        </svg>
+        </span>
+</button>
+
+<div
+    x-show="show"
+    @click.away="show = false"
+    x-transition:enter="transition ease-out duration-150"
+    x-transition:enter-start="transform opacity-0 scale-95"
+    x-transition:enter-end="transform opacity-100 scale-100"
+    x-transition:leave="transition ease-in duration-100"
+    x-transition:leave-start="transform opacity-100 scale-100"
+    x-transition:leave-end="transform opacity-0 scale-95"
+    class="origin-top-center absolute z-10 top-2 right-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none rounded-xl"  aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="px-4 py-5 space-y-1" role="none">
+        {{ content }}
+    </div>
+</div>
+</div>

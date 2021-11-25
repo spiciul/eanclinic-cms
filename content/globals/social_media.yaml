@@ -1,0 +1,23 @@
+title: 'Social media'
+data:
+  social_media:
+    -
+      handle: eanclinic
+      prefix: 'https://www.twitter.com/'
+      type: twitter
+      enabled: true
+    -
+      handle: eanclinic
+      prefix: 'https://www.facebook.com/'
+      type: facebook
+      enabled: true
+    -
+      handle: eanclinic
+      prefix: 'https://www.instagram.com/'
+      type: instagram
+      enabled: true
+    -
+      handle: eanclinic
+      prefix: 'https://youtube.com/'
+      type: youtube
+      enabled: true
