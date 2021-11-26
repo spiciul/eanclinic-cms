@@ -3352,6 +3352,10 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 
 @media (min-width: 640px) {
 
+    .sm\:block {
+        display: block;
+    }
+
     .sm\:px-6 {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -3666,6 +3670,10 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
         justify-content: flex-start;
     }
 
+    .lg\:justify-end {
+        justify-content: flex-end;
+    }
+
     .lg\:gap-x-12 {
         -moz-column-gap: 3rem;
              column-gap: 3rem;
@@ -3722,12 +3730,21 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
         padding-right: 3rem;
     }
 
+    .lg\:py-8 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
     .lg\:pt-32 {
         padding-top: 8rem;
     }
 
     .lg\:pt-24 {
         padding-top: 6rem;
+    }
+
+    .lg\:text-left {
+        text-align: left;
     }
 
     .lg\:text-4xl {
@@ -3760,6 +3777,10 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
         margin-top: 6rem;
     }
 
+    .xl\:block {
+        display: block;
+    }
+
     .xl\:max-w-lg {
         max-width: 32rem;
     }
@@ -3775,6 +3796,14 @@ input[type="file"]::file-selector-button, input[type="file"]::-webkit-file-uploa
 
     .xl\:grid-cols-4 {
         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .xl\:flex-row {
+        flex-direction: row;
+    }
+
+    .xl\:justify-start {
+        justify-content: flex-start;
     }
 
     .xl\:gap-x-12 {
