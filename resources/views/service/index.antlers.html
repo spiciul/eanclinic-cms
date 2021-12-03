@@ -1,0 +1,29 @@
+
+<div class="pt-32">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+            {{ partial:typography/h2 content="Servicii Eanclinic" }}
+            <p class="mt-4 text-lg font-normal text-indigo-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam magnam eos dolores hic debitis corporis.</p>
+        </div>
+    </div>
+</div>
+
+<section class="py-6 mt-16 md:py-8 lg:py-12 xl:py-16 gradient-light-indigo">
+
+    <div class="relative max-w-screen-xl px-4 mx-auto space-y-16 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+
+        {{ collection:services as="services" }}
+            {{ services }}
+                {{ partial:service/service_preview  }}
+            {{ /services }}
+        {{ /collection:services }}
+
+    </div>
+
+</section>
+
+{{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}
+
+

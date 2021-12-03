@@ -16,9 +16,9 @@
             >
                 <a
                     class="
-                    relative block py-1.5 after:block after:absolute after:-bottom-px after:w-full after:h-1 after:rounded  border-transparent md:text-sm xl:text-base font-bold focus:outline-none focus:text-indigo-900 focus:border-indigo-400 transition duration-150 ease-in-out focus:outline-none focus-visible:ring-2 ring-primary
+                    relative block py-1.5 after:block after:absolute after:-bottom-px after:w-full after:h-1 after:rounded  border-transparent md:text-sm xl:text-base focus:outline-none focus:text-indigo-900 focus:border-indigo-400 transition duration-150 ease-in-out focus:outline-none focus-visible:ring-2 ring-primary
                         {{ is_current || is_parent
-                            ? 'after:bg-orange-300 text-indigo-900 hover:text-indigo-400'
+                            ? 'after:bg-orange-300 text-indigo-900 hover:text-indigo-400 font-bold'
                             : 'after:bg-transparent text-indigo-400 hover:text-indigo-900 ' }}
                     "
                     {{ if children }}
@@ -46,7 +46,7 @@
                     <ul
                         x-show="subnavOpen"
                         x-trap="subnavOpen"
-                        class="absolute mt-2 -ml-3 py-2 px-3 bg-white border border-neutral/10 rounded shadow"
+                        class="absolute px-3 py-2 mt-2 -ml-3 bg-white border rounded shadow border-neutral/10"
                         @click.outside="subnavOpen = false"
                         x-transition
                     >
@@ -54,9 +54,9 @@
                             <li class="">
                                 <a
                                     class="
-                                        whitespace-nowrap py-2 px-1 -mx-1 block text-xs font-bold hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
+                                        whitespace-nowrap py-2 px-1 -mx-1 block text-xs hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
                                         {{ is_current || is_parent
-                                            ? 'text-primary'
+                                            ? 'text-primary font-bold'
                                             : 'text-neutral' }}
                                     "
                                     href="{{ url }}"

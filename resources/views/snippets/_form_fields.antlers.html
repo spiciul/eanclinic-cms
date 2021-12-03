@@ -12,13 +12,13 @@
         {{ width == '75' ?= 'md:col-span-9' }}
         {{ width == '100' ?= 'md:col-span-12' }}"
     >
-        <label class="font-bold" for="{{ handle }}">
+        <label class="font-bold text-primary" for="{{ handle }}">
             {{ trans :key="display" }}
             {{ if validate | contains:required }}
-                <sup class="text-yellow-400">*</sup>
+                <sup class="text-yellow-gold-900">*</sup>
             {{ /if }}
             {{ if instructions }}
-                <p class="font-normal text-sm my-1">{{ instructions }}</p>
+                <p class="my-1 text-sm font-normal">{{ instructions }}</p>
             {{ /if }}
         </label>
         {{# Load notification when there is a validation error with the name field. #}}
@@ -30,7 +30,7 @@
 {{ /fields }}
 
 {{# Pulse button and disable upon sending. #}}
-<div class="md:col-span-12 flex justify-end">
+<div class="flex justify-end md:col-span-12">
     {{ partial:components/button as="button" label="{ trans:strings.form_send }" attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"' }}
 </div>
 <template x-if="success">

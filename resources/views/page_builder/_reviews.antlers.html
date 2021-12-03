@@ -4,12 +4,41 @@
     @set page.page_builder.reviews
 #}}
 
-<section class="fluid-container grid md:grid-cols-12 gap-8">
-    {{ partial:typography/h3 class="md:col-span-12 text-center" }}
-    <h4>Acestea sunt parerile:</h4>
-    {{ collection:reviews as="reviews" }}
-        {{ reviews}}
-            <li>{{ title }} - {{ author }}</li>
-        {{ /reviews }}
-    {{ /collection:reviews }}
+<section class="py-12">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 overflow-hidden shadow lg:grid-cols-3 rounded-5xl gradient-light-indigo">
+            <div class="relative col-span-1 gs_reveal">
+                <img src="/assets/face-2.png" class="relative top-0 right-0 w-full max-w-full lg:absolute md:min-w-full md:h-full md:max-w-none" alt="eanclinic">
+            </div>
+            <div class="col-span-1 px-4 py-6 lg:col-span-2 lg:col-start-2 lg:p-12" x-data>
+                <div class="max-w-xl ml-auto text-center"  >
+                    <h2 class="font-serif text-4xl text-indigo-900 xl:text-6xl">
+                        {{ __('Experiența pacienților') }}
+                    </h2>
+                    <p class="mt-8 font-normal text-indigo-400 2xl:tex-lg"> {{ __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.') }}</p>
+
+                    {{ collection:reviews as="reviews" }}
+                    <div class="w-full h-full mt-12 swiper"
+                        x-init="new Swiper($el, {
+                            spaceBetween: 16,
+                            slidesPerView: 2,
+                            loop: true
+                        })">
+                        <div class="swiper-wrapper">
+                            {{ reviews chunk="2" }}
+                                <div class="flex flex-col w-full space-y-4 swiper-slide lg:w-1/2 ">
+                                    {{ chunk }}
+                                        {{ partial:reviews/review_cell }}
+                                    {{ /chunk }}
+                                </div>
+                            {{ /reviews }}
+                        </div>
+
+                    </div>
+                    {{ /collection:reviews }}
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+

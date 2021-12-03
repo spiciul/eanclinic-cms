@@ -5,25 +5,25 @@
 #}}
 
 <section class="py-6 md:py-8 lg:py-12 xl:py-16 ">
-    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 2xl:gap-x-12">
-            <div class="col-span-1 w-full lg:max-w-md xl:max-w-lg 2xl:max-w-2xl">
+            <div class="w-full col-span-1 lg:max-w-md xl:max-w-lg 2xl:max-w-2xl">
                 <div class="overflow-hidden aspect-w-5 aspect-h-7 rounded-3xl">
                     {{ partial:components/picture :image="main_image" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
                 </div>
             </div>
             <div class="col-span-1">
-                <div class="h-full flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center justify-center h-full text-center md:items-start md:text-left">
                     {{ partial:typography/h2 :content="title" }}
-                    <p class="mt-6 xl:mt-8 text-indigo-400 max-w-xs lg:max-w-sm xl:max-w-md font-medium 2xl:text-lg">{{ text }}</p>
+                    <p class="max-w-xs mt-6 font-medium text-indigo-400 xl:mt-8 lg:max-w-sm xl:max-w-md 2xl:text-lg">{{ text }}</p>
 
                     <div class="mt-8 md:mt-10 xl:mt-12 ">
-                        <!-- {{ if block:buttons }}
+                        {{ if block:buttons }}
                             {{ partial:components/buttons }}
-                        {{ /if }} -->
+                        {{ /if }}
                     </div>
                 </div>
             </div>
         </div>
-    </x-container>
+    </div>
 </section>

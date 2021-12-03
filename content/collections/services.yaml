@@ -1,5 +1,8 @@
 title: Services
+route: '/servicii/{slug}'
+template: 'service.show'
 revisions: false
+sort_dir: asc
 date_behavior:
   past: public
   future: private

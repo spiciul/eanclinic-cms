@@ -1,0 +1,6 @@
+name: test
+email: spiciul@yahoo.com
+phone: '0899999'
+message_body: tesst
+consent:
+  - 'yes'

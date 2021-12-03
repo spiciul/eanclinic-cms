@@ -1,0 +1,41 @@
+title: 'Image with text'
+fields:
+  -
+    handle: text
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      smartypants: false
+      antlers: false
+      display: Text
+      type: markdown
+      icon: markdown
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required
+  -
+    handle: image
+    field: figure.image
+  -
+    handle: desktop_layout
+    field:
+      options:
+        'image first': null
+        'text first': null
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Desktop layout'
+      type: select
+      icon: select
+      instructions: 'Desktop layout'
+      listable: hidden
+      instructions_position: above
+      validate:
+        - required

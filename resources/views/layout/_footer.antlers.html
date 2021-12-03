@@ -5,21 +5,24 @@
 
 <footer aria-labelledby="footer-heading">
     {{ partial:typography/h2 class="sr-only" :content="Footer" }}
-    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px">
         <div class="py-6 lg:flex lg:items-center">
-            <div class="max-w-sm mx-auto lg:ml-0">
-                {{ partial:components/logo width="120" }}
+
+            <div class="flex justify-center lg:justify-start">
+                {{ partial:components/logo_header width="auto" }}
             </div>
-            <div class="mt-8 lg:mt-0 flex-1">
+
+
+            <div class="flex-1 mt-8 lg:mt-0">
                 {{ partial:navigation/footer_nav }}
             </div>
         </div>
     </div>
-    <div class="py-12 lg:py-8 bg-indigo-900">
-        <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-6">
+    <div class="py-12 bg-indigo-900 lg:py-8">
+        <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-y-6">
                 <div class="col-span-1">
-                    <p class="text-white font-bold text-center lg:text-left">
+                    <p class="font-bold text-center text-white lg:text-left">
                         <span>
                             &copy; {{ configuration:copyright_since }}
                             {{ unless (now | format:Y) == configuration:copyright_since }}
@@ -29,11 +32,11 @@
                         </span>
                      </p>
                 </div>
-                <div class="col-span-1">
-                    <div class="flex items-center justify-center xl:justify-start md:space-x-4">
-                        <p class="hidden sm:block text-white font-bold">Intră în legătură cu noi</p>
-                        <div class="flex items-center md:justify-center lg:justify-start space-x-4 ">
-                            <a href="#"  class="text-white block" title="Urmareste-ne pe contul nostru de Facebook" target="_blank" rel="noopener">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center justify-center md:space-x-4">
+                        <p class="hidden text-base font-bold text-white sm:block">Intră în legătură cu noi</p>
+                        <div class="flex items-center space-x-4 md:justify-center lg:justify-start ">
+                            <a href="#"  class="block text-white" title="Urmareste-ne pe contul nostru de Facebook" target="_blank" rel="noopener">
                                 <span class="sr-only">Facebook</span>
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clip-rule="evenodd" />
@@ -54,11 +57,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1">
-                    <div class="flex flex-col xl:flex-row items-center lg:justify-end space-x-2">
-                        <a href="#" class="font-bold text-white"> Termeni și condiții </a>
-                        <span class="hidden xl:block text-white font-bold">|</span>
-                        <a href="#" class="font-bold text-white">Politica de confidențialitate </a>
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex flex-col items-center space-x-2 xl:flex-row lg:justify-end">
+                        <a href="#" class="text-base font-bold text-white"> Termeni și condiții </a>
+                        <span class="hidden font-bold text-white xl:block">|</span>
+                        <a href="#" class="text-base font-bold text-white">Politica de confidențialitate </a>
                     </div>
                 </div>
             </div>

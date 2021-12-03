@@ -1,6 +1,123 @@
 /* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
 
 @layer base {
+    @font-face {
+        font-family: 'Yeseva One';
+        src: url('/assets/static/fonts/YesevaOne-Regular.eot');
+        src: url('/assets/static/fonts/YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/static/fonts/YesevaOne-Regular.ttf') format('truetype'),
+        url('/assets/static/fonts/YesevaOne-Regular.woff') format('woff'),
+        url('/assets/static/fonts/YesevaOne-Regular.woff2') format('woff2');
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 400;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: "Yeseva One";
+            src:   url('/assets/static/fonts/YesevaOne-Regular.svg#YesevaOne-Regular') format('svg');
+        }
+    }
+
+
+    @font-face {
+        font-family: 'OpenSauceSans';
+        src: url('/assets/static/fonts/OpenSauceSans-Regular.eot');
+        src: url('/assets/static/fonts/OpenSauceSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/static/fonts/OpenSauceSans-Regular.ttf') format('truetype'),
+        url('/assets/static/fonts/OpenSauceSans-Regular.woff') format('woff'),
+        url('/assets/static/fonts/OpenSauceSans-Regular.woff2') format('woff2');
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 400;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: "OpenSauceSans";
+            src:   url('/assets/static/fonts/OpenSauceSans-Regular.svg#OpenSauceSans-Regular') format('svg');
+        }
+    }
+
+    @font-face {
+        font-family: 'OpenSauceSans';
+        src: url('/assets/static/fonts/OpenSauceSans-Medium.eot');
+        src: url('/assets/static/fonts/OpenSauceSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/static/fonts/OpenSauceSans-Medium.ttf') format('truetype'),
+        url('/assets/static/fonts/OpenSauceSans-Medium.woff') format('woff'),
+        url('/assets/static/fonts/OpenSauceSans-Medium.woff2') format('woff2');
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 500;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: "OpenSauceSans";
+            src:   url('/assets/static/fonts/OpenSauceSans-Medium.svg#OpenSauceSans-Medium') format('svg');
+        }
+    }
+
+
+    @font-face {
+        font-family: 'OpenSauceSans';
+        src: url('/assets/static/fonts/OpenSauceSans-Bold.eot');
+        src: url('/assets/static/fonts/OpenSauceSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/static/fonts/OpenSauceSans-Bold.ttf') format('truetype'),
+        url('/assets/static/fonts/OpenSauceSans-Bold.woff') format('woff'),
+        url('/assets/static/fonts/OpenSauceSans-Bold.woff2') format('woff2');
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 700;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: "OpenSauceSans";
+            src:   url('/assets/static/fonts/OpenSauceSans-Bold.svg#OpenSauceSans-Bold') format('svg');
+        }
+    }
+
+
+    @font-face {
+        font-family: 'OpenSauceSans';
+        src: url('/assets/static/fonts/OpenSauceSans-ExtraBold.eot');
+        src: url('/assets/static/fonts/OpenSauceSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/static/fonts/OpenSauceSans-ExtraBold.ttf') format('truetype'),
+        url('/assets/static/fonts/OpenSauceSans-ExtraBold.woff') format('woff'),
+        url('/assets/static/fonts/OpenSauceSans-ExtraBold.woff2') format('woff2');
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 800;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: "OpenSauceSans";
+            src:   url('/assets/static/fonts/OpenSauceSans-ExtraBold.svg#OpenSauceSans-ExtraBold') format('svg');
+        }
+    }
+
+
+    @font-face {
+        font-family: 'OpenSauceSans';
+        src: url('/assets/static/fonts/OpenSauceSans-Black.eot');
+        src: url('/assets/static/fonts/OpenSauceSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('/assets/static/fonts/OpenSauceSans-Black.ttf') format('truetype'),
+        url('/assets/static/fonts/OpenSauceSans-Black.woff') format('woff'),
+        url('/assets/static/fonts/OpenSauceSans-Black.woff2') format('woff2');
+        font-style: normal;
+        font-display: fallback;
+        font-weight: 900;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @font-face {
+            font-family: "OpenSauceSans";
+            src:   url('/assets/static/fonts/OpenSauceSans-Black.svg#OpenSauceSans-Black') format('svg');
+        }
+    }
 
 }
 
@@ -11,7 +128,7 @@
 @layer utilities {
 
     .content > p {
-        @apply text-lg leading-normal text-indigo-400 mb-4;
+        @apply mb-4 text-lg leading-normal text-indigo-400;
     }
 
     .content > p > strong {
@@ -19,12 +136,12 @@
     }
 
     .content > p > img {
-        @apply rounded-3xl shadow-xl;
+        @apply shadow-xl rounded-3xl;
     }
 
 
     .content > h3 {
-        @apply mb-6 pt-4 text-2xl font-serif font-normal text-indigo-900;
+        @apply pt-4 mb-6 font-serif text-2xl font-normal text-indigo-900;
     }
 
     @screen lg {
@@ -33,6 +150,65 @@
         }
 
     }
+
+    .gradient-light-indigo {
+    background-image: linear-gradient(to bottom, #FFFFFF 0% , #F2F2F9 49.08%, #FFFFFF 100%);
+}
+
+
+.primary-nav-toggle {
+    @apply relative z-50 flex items-center flex-shrink-0 cursor-pointer;
+    height: 18px;
+    width: 21px;
+}
+
+@screen lg {
+    .primary-nav-toggle {
+        @apply hidden;
+    }
+}
+
+.primary-nav-toggle > span {
+    @apply inline-block w-full bg-gray-900;
+    height: 2px;
+    transition: background-color .3s cubic-bezier(.19,1,.22,1);
+}
+
+.primary-nav-toggle span:before,
+.primary-nav-toggle span:after  {
+    content: "";
+    @apply absolute left-0 block w-full bg-gray-900;
+    height: 2px;
+    transition: background-color .3s cubic-bezier(.19,1,.22,1),-webkit-transform .3s cubic-bezier(.19,1,.22,1);
+    transition: transform .3s cubic-bezier(.19,1,.22,1),background-color .3s cubic-bezier(.19,1,.22,1);
+    transform-origin: 0 0;
+}
+
+.primary-nav-toggle span:before {
+    @apply top-0;
+}
+
+.primary-nav-toggle span:after {
+    @apply bottom-0;
+}
+
+.primary-nav-toggle.is-open > span {
+    @apply bg-transparent;
+}
+
+.primary-nav-toggle.is-open > span:before {
+    transform: rotate(45deg) translate3d(1px,-1px,0);
+    @apply bg-yellow-gold-900;
+}
+
+.primary-nav-toggle.is-open > span:after {
+    transform:rotate(-45deg) translate3d(1px,-1px,0);
+    @apply bg-yellow-gold-900;
+}
+
+body.nav-is-open {
+    @apply fixed top-0 left-0 w-full;
+}
 
 }
 

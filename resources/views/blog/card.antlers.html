@@ -1,13 +1,15 @@
-<a href="{{ url }}" class="transition-all duration-200 ease-in-out h-full block relative top-0 hover:-top-2 shadow-lg hover:shadow-xl bg-white rounded-xl overflow-hidden">
+<a href="{{ url }}" class="relative top-0 block h-full overflow-hidden transition-all duration-200 ease-in-out bg-white shadow-lg hover:-top-2 hover:shadow-xl rounded-xl">
     <img class="{{ oversized ? 'hidden md:block' : 'hidden' }} squiggle" height="285" src="{{ glide:hero_image height="570" width="1472" fit="crop_focal" }}" alt="{{ hero_image:alt }}">
+
     <img class="squiggle {{ oversized ?= 'md:hidden' }}" height="285" src="{{ glide:hero_image height="570" width="736" fit="crop_focal" }}" alt="{{ hero_image:alt }}">
-    <div class="py-6 px-8">
-        <h2 class="font-serif font-normal text-2xl leading-tight">
+
+    <div class="px-8 py-6">
+        <h2 class="font-serif text-2xl font-normal leading-tight">
             {{ title  }}
         </h2>
-        <p class="text-xs text-indigo-400 mt-4 flex items-center">
-            {{ date }}
+        <p class="flex items-center mt-4 text-xs text-indigo-400">
+            {{ date iso_format="Do MMMM, YYYY" }}
         </p>
-        <p class="text-xs text-indigo-400 mt-4">{{ intro }}</p>
+        <p class="mt-4 text-xs text-indigo-400">{{ intro }}</p>
     </div>
 </a>

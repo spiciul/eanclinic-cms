@@ -9,7 +9,7 @@
         class="font-bold focus:outline-none focus-visible:ring focus-visible:ring-offset-2 hover:border-yellow-gold-900 rounded-tr-lg rounded-bl-lg {{ class }}
             {{ if button_type == 'inline' }}
                 underline motion-safe:transition
-                {{ inverted ? 'text-white focus-visible:ring-white hover:text-yellow-gold-900' : 'text-indigo-900 focus-visible:ring-indigo-900' }}
+                {{ inverted ? 'text-white focus-visible:ring-white hover:text-yellow-gold-900' : 'text-indigo-900 hover:text-white hover:bg-yellow-gold-900 focus-visible:ring-indigo-900' }}
             {{ else }}
                 inline-flex items-center py-3 px-4 border-2 leading-none uppercase tracking-widest text-sm no-underline select-none whitespace-nowrap motion-safe:transition
                 {{ inverted ? 'border-white text-white focus-visible:ring-white hover:text-yellow-gold-900' : 'border-indigo-900 text-indigo-900 focus-visible:ring-indigo-900' }}

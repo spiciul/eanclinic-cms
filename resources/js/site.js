@@ -14,6 +14,14 @@ gsap.registerPlugin(CSSRulePlugin, ScrollToPlugin, ScrollTrigger, ExpoScaleEase,
 
 window.gsap = gsap;
 
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
+window.Swiper = Swiper;
+
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 // Global get CSRF token function (used by forms).
 window.getToken = async () => {
     return await fetch('/!/DynamicToken/refresh')

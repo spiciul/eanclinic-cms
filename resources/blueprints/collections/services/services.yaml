@@ -8,31 +8,37 @@ sections:
         field:
           type: text
           required: true
-          validate:
-            - required
-            - 'max:100'
-          display: 'Denumire serviciu'
-          instructions_position: above
-          listable: hidden
           input_type: text
           antlers: false
-      -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
-          display: 'Descriere serviciu'
-          instructions_position: above
+          display: Title
+          icon: text
           listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: excerpt
+        field:
           restrict: false
           automatic_line_breaks: true
           automatic_links: false
           escape_markup: false
           smartypants: false
           antlers: false
+          display: Excerpt
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
           validate:
             - required
-            - 'max:255'
+      -
+        handle: imagine
+        field: figure.image
+        config:
+          display: Imagine
+      -
+        import: page_builder
   sidebar:
     display: Sidebar
     fields:

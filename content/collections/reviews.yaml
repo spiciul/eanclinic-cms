@@ -1,8 +1,6 @@
 title: Reviews
-route: ''
-layout: components/reviews
-template: default
-revisions: true
+template: review.show
+revisions: false
 date: false
 sort_dir: asc
 date_behavior:

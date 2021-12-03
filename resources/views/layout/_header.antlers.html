@@ -2,26 +2,25 @@
 	@name Header
 	@desc The sites header rendered on each page.
 #}}
-<div
-    :class="{'fixed' : openMobileNav === true }"
-    class="site-header absolute top-0 left-0 w-full mt-4 md:mt-6 z-50">
-    <div class="relative mx-auto max-w-screen-xl 2xl:max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-        <div class="w-full relative">
+<header
+    :class="{'fixed' : mobileNavOpen === true }"
+    class="absolute top-0 left-0 z-50 w-full mt-4 site-header md:mt-6">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="relative w-full">
             <div class="flex items-center justify-between">
                 <div
                     class="max-w-sm">
                     <h1 class="sr-only">{{ config('settings.site_name') }}</h1>
-                    <a href="/" class="relative block w-full max-w-40 xl:max-w-56" title="">
-                        {{ partial:components/logo }}
-                    </a>
+                    {{ partial:components/logo_header }}
+
                 </div>
 
-                <div class="hidden lg:flex flex-1 justify-end pl-12">
+                <div class="justify-end flex-1 hidden pl-12 lg:flex">
                     {{ partial:navigation/main_desktop }}
                 </div>
 
                 <button
-                    @click="openMobileNav = !openMobileNav; document.querySelector('.primary-nav-toggle').classList.toggle('is-open');  document.querySelector('body').classList.toggle('nav-is-open')"
+                    @click="mobileNavOpen = !mobileNavOpen; document.querySelector('.primary-nav-toggle').classList.toggle('is-open');  document.querySelector('body').classList.toggle('nav-is-open')"
                     type="button"
                     class="primary-nav-toggle js-mobile-nav-toggle"
                     aria-controls="mobile-menu"

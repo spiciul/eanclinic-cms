@@ -1,0 +1,12 @@
+{{#
+@name Logo
+@desc The logo component with a `width` attribute.
+#}}
+
+<a
+    class="block w-full mx-auto max-w-40 xl:max-w-56 lg:ml-0 focus:outline-none focus-visible:ring-2"
+    aria-label="Logo {{ config:app:name }}"
+    href="{{ site:url }}"
+>
+    <img src="/visuals/branding/eanclinic-logo-footer.png" width="{{ width }}" alt="{{ config:app:name }}"/>
+</a>

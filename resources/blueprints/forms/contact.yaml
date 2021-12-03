@@ -5,24 +5,47 @@ sections:
       -
         handle: name
         field:
-          display: Name
+          display: Nume
           type: text
           validate: required
           localizable: true
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
       -
         handle: email
         field:
-          display: 'Email address'
+          display: Email
           type: text
-          validate: required|email
+          validate:
+            - required
+            - email
           localizable: true
+          instructions_position: above
+          listable: hidden
+          input_type: text
+          antlers: false
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Telefon
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
       -
         handle: message_body
         field:
-          display: Message
+          display: Mesaj
           type: textarea
           validate: required
           localizable: true
+          instructions_position: above
+          listable: hidden
+          antlers: false
       -
         handle: consent
         field:
@@ -33,4 +56,4 @@ sections:
           validate:
             - required
           options:
-            'yes': 'I agree that my submitted data is being collected and stored.'
+            'yes': 'Sunt de acord cu conditiile de utilizare ale site-ului'

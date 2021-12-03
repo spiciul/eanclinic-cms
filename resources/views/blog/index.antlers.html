@@ -1,15 +1,18 @@
-<article class="pt-24 lg:pt-32 max-w-7xl mx-auto px-3">
-    <header class="max-w-xl">
-        {{ partial:typography/h2 content="Blog" }}
-        <p class="mt-6 text-indigo-400 font-normal"> Afla mai multte despre lumea medicala </p>
-    </header>
+<article class="px-3 pt-24 mx-auto lg:pt-32 max-w-7xl">
+
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <header class="max-w-2xl mx-auto text-center">
+            {{ partial:typography/h2 content="Blog Eanclinic" }}
+            <p class="mt-6 text-lg font-normal text-indigo-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam magnam eos dolores hic debitis corporis.</p>
+        </header>
+    </div>
 
     {{ collection:blog as="posts" paginate="12" }}
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-8">
+        <section class="grid grid-cols-1 gap-6 py-8 mt-12 lg:mt-16 md:grid-cols-4 lg:grid-cols-6">
             {{ posts }}
                 {{ if first }}
-                    <div class="md:col-span-4 mb-12 ">
+                    <div class="mb-12 md:col-span-4 lg:col-span-6 ">
                         {{ partial:blog/card-oversized oversized="true" }}
                     </div>
 
@@ -25,7 +28,7 @@
 
     {{ paginate }}
         {{ if prev_page || next_page }}
-        <section class="flex space-x-8 justify-center text-xl pt-16 font-bold">
+        <section class="flex justify-center pt-16 space-x-8 text-xl font-bold">
             {{ if prev_page }}
                 <a href="{{ prev_page }}"><span class="squiggle">&larr;</span> Newer articles</a>
             {{ /if }}

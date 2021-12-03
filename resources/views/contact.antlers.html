@@ -1,0 +1,16 @@
+<section class="pt-24 pb-16 lg:pt-32 gradient-light-indigo">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="grid gap-8 fluid-container md:grid-cols-12">
+            <div class="md:col-start-4 md:col-span-6">
+                <div class="flex flex-col justify-center h-full text-center">
+                    {{ partial:typography/h2 content="Contact" }}
+                    <p class="mt-6 font-normal text-indigo-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime magnam veniam quod ab, perspiciatis beatae! Optio necessitatibus vitae fuga quasi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}

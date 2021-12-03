@@ -2,5 +2,5 @@ title: Configuration
 data:
   copyright_since: 2021
   copyright_name: Eanclinic
-  404_title: 'Page not found'
-  404_text: 'The page you were looking for is not available (anymore).'
+  404_title: "Pagina nu exista"
+  404_text: "Pagina pe care o căutați nu este disponibilă."
