@@ -1,8 +1,11 @@
 import Alpine from 'alpinejs'
+import intersect from '@alpinejs/intersect'
 import collapse from '@alpinejs/collapse'
 import persist from '@alpinejs/persist'
 import trap from '@alpinejs/trap'
 import 'focus-visible'
+
+Alpine.plugin(intersect)
 
 import { gsap } from "gsap";
 import { ExpoScaleEase, RoughEase, SlowMo } from "gsap/EasePack";

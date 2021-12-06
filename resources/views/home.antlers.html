@@ -90,8 +90,8 @@
         </div>
     </div>
 
-        <div class="mt-12 md:mt-16 xl:mt-24" x-data="galeryCarousel">
-        <div class="swiper-container" x-ref="galleryContainer">
+    <div class="mt-12 md:mt-16 xl:mt-24" x-data="galleryCarousel">
+        <div class="swiper-container overflow-x-hidden" x-ref="galleryContainer">
             <div class="space-x-4 swiper-wrapper md:space-x-6">
                 <div class="mb-6 swiper-slide">
                     <figure class="block overflow-hidden shadow-lg aspect-h-3 aspect-w-4 rounded-3xl">
@@ -150,7 +150,7 @@
 
         <script type="text/javascript">
             document.addEventListener('alpine:init', () => {
-                Alpine.data('galeryCarousel', () => ({
+                Alpine.data('galleryCarousel', () => ({
                 init() {
                     var swiper = new Swiper(this.$refs.galleryContainer, {
                         slidesPerView: getSlidesCount(),

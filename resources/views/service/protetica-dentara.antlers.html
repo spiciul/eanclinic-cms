@@ -1,0 +1,144 @@
+<section class="pt-32 pb-24">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="hidden font-bold text-indigo-400 uppercase md:block"> eanclinic </p>
+            {{ partial:typography/h2 :content="title" }}
+            <div class="mt-6 content">{{ excerpt }}</div>
+            <div class="mt-12">
+                <div class="grid grid-cols-4 gap-6">
+                    <div class="col-span-2 pl-12">
+                        <div class="block overflow-hidden shadow-xl aspect-w-4 aspect-h-4 rounded-3xl">
+                            {{ partial:components/picture :image="imagine" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <div class="block overflow-hidden shadow-xl aspect-w-3 aspect-h-4 rounded-3xl">
+                            {{ partial:components/picture :image="imagine" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <div class="block overflow-hidden shadow-xl aspect-w-4 aspect-h-4 rounded-3xl -translate-y-1/3">
+                            {{ partial:components/picture :image="imagine" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <div class="block overflow-hidden shadow-xl aspect-w-4 aspect-h-3 rounded-3xl">
+                            {{ partial:components/picture :image="imagine" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-yellow-gold-400 bg-opacity-20">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            {{ partial:typography/h2 content="Tratamente protetice" }}
+            <p class="mt-6 font-normal text-indigo-400">Tratamentele protetice sunt o categorie extrem de importantă a stomatologiei, întrucât presupun refacerea sau înlocuirea unuia sau mai multor dinți care fie și-au pierdut capacitatea funcțională, fie au fost pierduți complet de pe arcade în urma avansării procesului carios.</p>
+
+                <div class="mt-12 space-y-4 mansonry-procedures">
+                    {{ treatments }}
+                        <div class="px-3.5 py-2.5 rounded-tl-lg rounded-br-lg break-inside bg-yellow-gold-400 bg-opacity-20 shadow">
+                            <p class="text-base text-primary">
+                                {{ value }}
+                            </p>
+                        </div>
+                    {{ /treatments }}
+                </div>
+        </div>
+        <div class="mt-16 space-y-16">
+
+            <div class="grid grid-cols-2 py-12 bg-white bg-opacity-50 border border-indigo-900 shadow-2xl rounded-3xl gs_reveal">
+                <div class="col-span-1">
+                    <div class="relative overflow-hidden -translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+                        {{ partial:components/picture image="/assets/protetica-eanclinic-1.jpeg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+                <div
+                class="flex flex-col justify-center col-span-1 pr-12">
+                    {{ partial:typography/h3 content="Coroane din ceramică presată" }}
+                    <div class="mt-4 space-y-4">
+                        <p class="text-indigo-900 opacity-75">
+                            Ceramica dentară presată reprezintă o opțiune excelentă de restaurare a dinților frontali, redând frumusețea zâmbetului natural. Coroanele din ceramică dentară presată sunt realizate fără suport metalic.
+                        </p>
+                        <p class="text-indigo-900 opacity-75">
+                            Structura de bază este un nucleu rezistent din porțelan sinterizat, care se topește și se presează în cuptor la temperaturi înalte. Nucleul de ceramică se plachează tot cu porțelan printr-o tehnică de stratificare pas cu pas. Dinții artificiali din ceramică presată obțin astfel transluciditatea și culoarea naturală.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 py-12 bg-white bg-opacity-50 border border-indigo-900 shadow-2xl rounded-3xl gs_reveal">
+                <div class="flex flex-col justify-center col-span-1 pl-12">
+                    {{ partial:typography/h3 content="Lucrări dentare din porțelan pe zirconiu" }}
+                    <div class="mt-4 space-y-4">
+                        <p class="text-indigo-900 opacity-75">
+                            Zirconiul permite luminii să treacă la fel cum o face și în cazul unui dinte natural, în comparație cu structura metalică ce blochează trecerea luminii.
+                        </p>
+                        <p class="text-indigo-900 opacity-75">
+                           Zirconiul folosit ca structură la realizarea lucrărilor dentare ceramice este și un bun izolator termic, contribuind la menținerea vitalității dintelui când se dorește păstrarea nervului.
+                        </p>
+                        <p class="text-indigo-900 opacity-75">
+                            Acesta este și unul dintre cele mai biocompatibile materiale disponibile în tehnica stomatologică și elimină posibilitatea de alergii.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="relative overflow-hidden translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+                        {{ partial:components/picture image="/assets/protetica-eanclinic-1.jpeg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 py-12 bg-white bg-opacity-50 border border-indigo-900 shadow-2xl rounded-3xl gs_reveal">
+                <div class="col-span-1">
+                    <div class="relative overflow-hidden -translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+                        {{ partial:components/picture image="/assets/protetica-eanclinic-1.jpeg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center col-span-1 pr-12">
+                    {{ partial:typography/h3 content="Proteză dentară" }}
+
+                    <div class="mt-4 space-y-4">
+                        <p class="text-indigo-900 opacity-75">
+                            Proteza mobilă nu are niciun element de sprijin sau ancorare. Aceasta se sprijină direct pe gingie și osul maxilar.
+                        </p>
+                        <p class="text-indigo-900 opacity-75">
+                            Proteza mobilizabilă (scheletată) are elemente de sprijin mixt pe suportul gingivo-osos dar și pe dinții restanți. Aceștia trebuie consolidați cu lucrări dentare care au sisteme speciale de prindere a protezei scheletate.
+                        </p>
+                         <p class="text-indigo-900 opacity-75">
+                             Un tip special de proteză dentară este cea sprijinită pe implanturi (Overdenture). În acest caz suprasolicitarea implanturilor dentare le scade speranța de viață.
+                         </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 py-12 bg-white bg-opacity-50 border border-indigo-900 shadow-2xl rounded-3xl gs_reveal">
+                <div class="flex flex-col justify-center col-span-1 pl-12">
+                    {{ partial:typography/h3 content="Fațete dentare" }}
+                    <div class="mt-4 space-y-4">
+                        <p class="text-indigo-900 opacity-75">
+                            Fațetele dentare sunt un element de actualitate în practica stomalogiei estetice. Procedura presupune aplicarea pe fața vizibilă a dinților, cu predilecție la dinții frontali, a unor fațete speciale din ceramică.
+                        </p>
+                        <p class="text-indigo-900 opacity-75">
+                            Rezultatele tratamentelor cu fațete dentare dau satisfacție maximă, obținându-se un zâmbet alb, strălucitor, cu dinți frumos aliniați.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-1">
+                    <div class="relative overflow-hidden translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+                        {{ partial:components/picture image="/assets/protetica-eanclinic-1.jpeg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+{{ page_builder scope="block" }}
+    {{ partial src="page_builder/{type}" }}
+{{ /page_builder }}

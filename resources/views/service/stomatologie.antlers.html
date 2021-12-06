@@ -1,0 +1,23 @@
+<section class="pt-32 pb-24">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="hidden font-bold text-indigo-400 uppercase md:block"> eanclinic </p>
+            {{ partial:typography/h2 :content="title" }}
+            <div class="mt-6 content">{{ excerpt }}</div>
+        </div>
+        <div class="grid max-w-5xl grid-cols-2 mx-auto mt-16 gap-x-12">
+            <div class="relative">
+                <div class="relative z-20 my-4 translate-x-4 shadow-2xl gs_reveal md:my-0 md:translate-x-0 aspect-w-6 aspect-h-5 rounded-2xl">
+                    {{ partial:components/picture image="/assets/eanclinic-face-1_600x.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw"  class="rounded-2xl" }}
+                </div>
+                <div class="absolute top-0 left-0 z-10 w-full h-full border border-opacity-50 border-yellow-gold-900 md:-top-5 md:-left-5 rounded-2xl "></div>
+            </div>
+            <div class="relative translate-y-12">
+                <div class="relative z-20 my-4 translate-x-4 shadow-2xl gs_reveal md:my-0 md:translate-x-0 aspect-w-6 aspect-h-5 rounded-2xl">
+                    {{ partial:components/picture image="/assets/eanclinic-face-1_600x.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw"  class="rounded-2xl" }}
+                </div>
+                <div class="absolute top-0 left-0 z-10 w-full h-full border border-opacity-50 shadow-3xl border-yellow-gold-900 md:-top-5 md:-left-5 rounded-2xl "></div>
+            </div>
+        </div>
+    </div>
+</section>
