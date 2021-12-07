@@ -3,8 +3,7 @@ sections:
   main:
     display: Main
     fields:
-      -
-        handle: title
+      - handle: title
         field:
           type: text
           required: true
@@ -16,8 +15,7 @@ sections:
           instructions_position: above
           validate:
             - required
-      -
-        handle: excerpt
+      - handle: excerpt
         field:
           restrict: false
           automatic_line_breaks: true
@@ -32,21 +30,26 @@ sections:
           instructions_position: above
           validate:
             - required
-      -
-        handle: imagine
+      - handle: imagine
         field: figure.image
         config:
           display: Imagine
-      -
-        import: page_builder
+      - import: page_builder
   sidebar:
     display: Sidebar
     fields:
-      -
-        handle: slug
+      - handle: slug
         field:
           type: slug
           required: true
           localizable: true
           validate:
             - required
+      - handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true

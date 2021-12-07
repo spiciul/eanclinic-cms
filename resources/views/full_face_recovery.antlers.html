@@ -65,10 +65,10 @@
 
             <div class="col-span-1 ">
                 <div class="flex flex-col justify-center h-full max-w-lg mt-6 ml-auto md:mt-0 lg:text-right ">
-                    <p class="font-bold text-indigo-900 uppercase"> {{ __('ce este full face recovery') }}</p>
-                    <h2 class="mt-2 font-serif text-4xl text-indigo-900 lg:mt-4 xl:text-6xl">
-                        Restitutio ad intagrum
-                    </h2>
+                    <p class="font-bold text-indigo-900 uppercase"> ce este full face recovery</p>
+
+                    {{ partial:typography/h2 content="Restitutio ad intagrum" class="mt-2 lg:mt-4"}}
+
                     <div class="mt-6 space-y-6 lg:mt-8">
                         <p class="text-indigo-400 2xl:text-lg"> FFR este varful de lance in a intoarce timpul si a reda tot ce s-a pierdut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolore magna.</p>
                         <p class="text-indigo-400 2xl:text-lg"> FFR este varful de lance in a intoarce timpul si a reda tot ce s-a pierdut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
@@ -191,6 +191,9 @@
 
 
 {{ partial:sections/services }}
+
+
+{{ partial:sections/history }}
 
 
 {{ page_builder scope="block" }}

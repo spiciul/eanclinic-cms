@@ -1,6 +1,8 @@
 title: Configuration
 data:
+  phone_number: '0788989897'
+  email_address: office@eanclinic.ro
   copyright_since: 2021
   copyright_name: Eanclinic
-  404_title: "Pagina nu exista"
-  404_text: "Pagina pe care o căutați nu este disponibilă."
+  404_title: 'Pagina nu exista'
+  404_text: 'Pagina pe care o căutați nu este disponibilă.'

@@ -2,14 +2,14 @@ title: Contact
 honeypot: fax
 email:
   - to: adrian.spataru@cromaticdesign.ro
-    from: test@eanclinic.ro
+    from: info@eanclinic.ro
     reply_to: "{{ email }}"
-    subject: "Formular contact completat"
+    subject: "Formular trimis de vizitator eanclinic.ro"
     html: email/form_owner
     text: email/form_owner_text
   - to: "{{ email }}"
-    from: info@site.com
-    reply_to: info@site.com
-    subject: "Contact form sent"
+    from: info@eanclinic.ro
+    reply_to: info@eanclinic.ro
+    subject: "Formular Ean Clinic"
     html: email/form_sender
     text: email/form_sender_text

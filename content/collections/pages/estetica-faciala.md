@@ -10,7 +10,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1360cc41-869b-4832-a14b-363726f1c75d
-updated_at: 1638799749
+updated_at: 1638871345
 page_builder:
   -
     type: latest_articles

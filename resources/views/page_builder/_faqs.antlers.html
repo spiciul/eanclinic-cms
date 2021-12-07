@@ -1,3 +1,9 @@
+{{#
+    @name Intrebari frecvente
+    @desc The faq page builder block.
+    @set page.page_builder.faqs
+#}}
+
 <section class="py-8 md:py-8 lg:py-12">
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-y-8 gap-x-8 2xl:gap-x-12">
@@ -8,10 +14,24 @@
 
                     <p class="mt-8 text-indigo-400"> {{ __('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.') }}</p>
                     <p class="max-w-sm mt-8 text-indigo-400">
-                        Pentru orice nelămuriri sună-ne la
-                        <a href="tel:{{ config('settings.phone_number') }}" class="font-bold text-indigo-900" rel="noopener">{{ config('settings.phone_number') }}</a>
-                        sau  lasă-ne un mesaj la
-                        <a href="tel:{{ config('settings.email_address') }}" class="font-bold text-indigo-900" rel="noopener">{{ config('settings.email_address') }}</a>
+                        Pentru orice nelămuriri
+                        {{ if configuration:phone_number }}
+                        sună-ne la
+                        <a href="tel:{{ configuration:phone_number }}" class="font-bold text-indigo-900" rel="noopener" target="_blank">{{ configuration:phone_number }}</a>
+
+                        {{ /if }}
+
+                        {{ if configuration:email_address }}
+
+                        {{ if configuration:email_address && configuration:phone_number }}
+                            sau
+                        {{ /if }}
+
+                        lasă-ne un mesaj la
+
+                        <a href="mailto:{{ configuration:email_address }}" class="font-bold text-indigo-900" rel="noopener" target="_blank">{{ configuration:email_address }}</a>
+
+                        {{ /if }}
                     </p>
                     <div class="mt-8 md:mt-10 xl:mt-12 ">
                         {{ partial:components/button label="trimite-ne un mesaj" link_type="url" url="/contact" inverted="false" }}

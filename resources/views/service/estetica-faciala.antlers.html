@@ -1,186 +1,173 @@
+{{#
+	@name Estetica faciala
+	@desc Template Pagina servicii/estetica faciala
+#}}
+
 <section class="pt-32">
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center">
-            <p class="hidden font-bold text-indigo-400 uppercase md:block"> eanclinic </p>
-            {{ partial:typography/h2 :content="title" }}
-            <div class="mt-6 content">{{ excerpt }}</div>
+            <p class="hidden font-bold text-indigo-400 uppercase md:block"> ean clinic </p>
+            {{ partial:typography/h1 :content="title" }}
+            <div class="mt-6 content">
+                <p>{{ excerpt }}</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="px-16 py-24 space-y-16">
-    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 py-12 shadow-2xl bg-yellow-gold-400 bg-opacity-20 rounded-3xl gs_reveal">
-            <div class="col-span-1">
-                <div class="relative overflow-hidden -translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+<section class="py-16 lg:px-12">
+    <div class="relative max-w-screen-xl px-4 mx-auto space-y-8 lg:space-y-16 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 py-8 shadow-2xl md:py-12 md:grid-cols-2 bg-yellow-gold-400 bg-opacity-20 rounded-3xl gs_reveal">
+            <div class="col-span-1 px-8 md:px-0">
+                <div class="relative overflow-hidden md:-translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
                     <img src="https://images.unsplash.com/photo-1599566219227-2efe0c9b7f5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtaWxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&h=800&q=60" alt="">
                 </div>
             </div>
             <div
-            class="flex flex-col justify-center col-span-1 pr-12">
-                {{ partial:typography/h3 content="Mărire buze" }}
+            class="flex flex-col justify-center col-span-1 p-8 md:pr-12">
+                {{ partial:typography/h3 content="Mărire buze / corecție asimetrie " }}
                 <div class="mt-4 space-y-4">
                     <p class="text-indigo-900 opacity-75">
-                        Procedura de augmentare a buzelor este din ce în ce mai populară, și fiind minim-invazivă, este o metodă simplă de înfrumusețare sau de retușare.
+                        Procedura de augmentare a buzelor este o metodă simplă de înfrumusețare sau de retușare. Practic, se injectează acid hialuronic pentru a se obține buze senzuale, puțin mai voluminoase sau pentru a face ca buzele să fie proporționale sau simetrice.
                     </p>
                      <p class="text-indigo-900 opacity-75">
-                         Practic, se injectează acid hialuronic pentru a se obține buze senzuale, puțin mai voluminoase. Procedura este de scurtă durată și nu necesită pregătiri speciale, dar este necesar un consult cu medicul înainte de procedură.
-                     </p>
-                     <p class="text-indigo-900 opacity-75">
-                         Posibilele reacții adverse ar fi hematoamele și echimozele.
+                         Procedura este de scurtă durată și nu necesită pregătiri speciale, dar este necesar un consult cu medicul înainte de procedură. Efectele se mențin câteva luni.
                      </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 py-12 shadow-2xl rounded-3xl gs_reveal bg-yellow-gold-400 bg-opacity-20">
-            <div class="flex flex-col justify-center col-span-1 pl-12">
-                {{ partial:typography/h3 content="Corecție asimetrie buze" }}
+        <div class="grid grid-cols-1 py-8 shadow-2xl md:py-12 md:grid-cols-2 rounded-3xl gs_reveal bg-yellow-gold-400 bg-opacity-20">
+
+            <div class="flex flex-col justify-center order-2 col-span-1 p-8 md:order-1 md:p-0 md:pl-12">
+
+                {{ partial:typography/h3 content="Reconturare facial/mandibulară " }}
+
                 <div class="mt-4 space-y-4">
                     <p class="text-indigo-900 opacity-75">
-                        Acidul hialuronic poate fi folosit și pentru corectarea buzelor, procedură care modifică mai puțin fizionomia , având doar scopul de a face ca buzele să fie proporționale sau simetrice.
+                         Reconturarea este o procedură minim invazivă care constă în injectarea de acid hialuronic pentru a reface trăsăturile și a îmbunătăți aspectul prin modificarea conturului facial.
                     </p>
                      <p class="text-indigo-900 opacity-75">
-                         Se vor face injectări în puncte specifice, care să refacă proporțiile buzelor și să asigure un aspect plăcut. Procedura este de scurtă durată și efectele se mențin câteva luni.
+                         Este o procedură rapidă (cu durata de până la jumătate de oră), nedureroasă  și cu rezultate imediate care se mențin o perioadă îndelungată (chiar până la 18 luni).
                      </p>
                 </div>
             </div>
-            <div class="col-span-1">
-                <div class="relative overflow-hidden translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+            <div class="order-1 col-span-1 px-8 md:px-0 md:order-2">
+                <div class="relative overflow-hidden md:translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
                     <img src="https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=1200&q=80" alt="">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 py-12 bg-indigo-400 shadow-2xl rounded-3xl gs_reveal bg-opacity-20 ">
-            <div class="col-span-1">
-                <div class="relative overflow-hidden -translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+        <div class="grid grid-cols-1 pb-8 bg-indigo-400 shadow-2xl md:py-12 md:grid-cols-2 rounded-3xl gs_reveal bg-opacity-20 ">
+            <div class="col-span-1 p-8 md:px-0">
+                <div class="relative overflow-hidden md:-translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
                     <img src="https://images.unsplash.com/photo-1525222285365-d6bfe94ec598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=1200&q=80" alt="">
                 </div>
             </div>
             <div
-            class="flex flex-col justify-center col-span-1 pr-12">
-                {{ partial:typography/h3 content="Mărire pomeți" }}
+            class="flex flex-col justify-center col-span-1 p-8 md:p-0 md:pr-12">
+                {{ partial:typography/h3 content="Terapia Vampir (PRP)" }}
                 <div class="mt-4 space-y-4">
                     <p class="text-indigo-900 opacity-75">
-                        Volumizarea pomeților este indicată pentru refacerea conturului facial și pentru echilibrarea proporțiilor sau ștergerea urmelor lăsate de ani.
+                         Terapia Vampir este un tratamentul cu plasmă proprie îmbogățită cu trombocite. Procedura presupune recoltarea unei mici cantități din sângele pacientului într-o eprubetă specială, care apoi este centrifugată.
                     </p>
                      <p class="text-indigo-900 opacity-75">
-                         În general este necesară o cantitate foarte mică, această zonă fiind ușor de evidențiat. Procedura este de scurtă durată (până la jumătate de oră), efectul este vizibil imediat și are o remanență mai mare decât în cazul buzelor.
+                          În final se extrage fracția activată de plachete sangvine, alături de factori de creștere și regenerare tisulară. Înainte de intervenție sunt necesare evaluarea stării de sănătate și câteva analize medicale.
                      </p>
                 </div>
             </div>
         </div>
-        <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 py-12 shadow-2xl rounded-3xl gs_reveal bg-yellow-gold-400 bg-opacity-20">
-                <div class="flex flex-col justify-center col-span-1 pl-12">
-                    {{ partial:typography/h3 content="Reconturare facial/mandibulară" }}
-                    <div class="mt-4 space-y-4">
-                        <p class="text-indigo-900 opacity-75">
-                            Reconturarea este o procedură minim invazivă care constă în injectarea de acid hialuronic pentru a reface trăsăturile și a îmbunătăți aspectul prin modificarea conturului facial. Fiecare caz este diferit, motiv pentru care uneori poate fi necesară o cantitate mai mare de substanță.
-                        </p>
-                        <p class="text-indigo-900 opacity-75">
-                            Reconturarea facial-mandibulară este o procedură rapidă (cu durata de până la jumătate de oră), nedureroasă și cu rezultate imediate care se mențin o perioadă îndelungată (chiar până la 18 luni).
-                        </p>
-                    </div>
-                </div>
-                <div class="col-span-1">
-                    <div class="relative overflow-hidden translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
-                        <img src="https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=1200&q=80" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
-<section class="py-6 bg-indigo-900 md:py-8 lg:py-16">
+<section class="py-6">
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center ">
-            {{ partial:typography/h2 content="Ce ne recomandă?" color="text-white" }}
+            {{ partial:typography/h2 content="Ce ne recomandă?" }}
         </div>
-        <div class="grid grid-cols-1 mt-8 text-center md:mt-12 md:grid-cols-2 xl:grid-cols-4 gap-y-8 gap-x-12 md:text-left">
-            <div class="col-span-1 text-center">
-                <h4 class="font-serif text-2xl text-white">Experienta</h4>
-                <p class="mt-2 text-white text-opacity-80 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="grid grid-cols-1 mt-8 md:mt-12 md:grid-cols-2 xl:grid-cols-4 gap-y-8 gap-x-12">
+            <div class="col-span-1">
+                <h4 class="font-serif text-2xl text-indigo-900"> Empatie</h4>
+                <p class="mt-2 text-indigo-900 text-opacity-75 md:mt-4">
+                    Înțelegem că fiecare caz este unic și fiecare pacient este un om, nu doar o sumă a unor patologii pe care trebuie să le remediem.
+                </p>
             </div>
-            <div class="col-span-1 text-center">
-                <h4 class="font-serif text-2xl text-white">Profesionalism</h4>
-                <p class="mt-2 text-white text-opacity-80 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-span-1">
+                <h4 class="font-serif text-2xl text-indigo-900">Profesionalism</h4>
+                <p class="mt-2 text-indigo-900 text-opacity-75 md:mt-4">
+                    Cazurile sunt abordate cu profesionalism, atât în conceperea planului de tratament cât și în discuțiile cu pacienții și alegerea soluțiilor potrivite.
+                </p>
             </div>
-            <div class="col-span-1 text-center">
-                <h4 class="font-serif text-2xl text-white">Perfectiune</h4>
-                <p class="mt-2 text-white text-opacity-80 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-span-1">
+                <h4 class="font-serif text-2xl text-indigo-900">Perfectiune</h4>
+                <p class="mt-2 text-indigo-900 text-opacity-75 md:mt-4">
+                    Simetrie, armonie, echilibru, funcționalitate optimă, toate acestea sunt criterii care împreună formează perfecțiunea – așa cum poate fi ea realizată pentru fiecare pacient în parte.
+                </p>
             </div>
-            <div class="col-span-1 text-center">
-                <h4 class="font-serif text-2xl text-white">Empatie</h4>
-                <p class="mt-2 text-white text-opacity-80 md:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="col-span-1">
+                <h4 class="font-serif text-2xl text-indigo-900">Comunicare</h4>
+                <p class="mt-2 text-indigo-900 text-opacity-75 md:mt-4">
+                    Comunicarea transparentă și clară este esențială atât între colegi cât și între medici și pacienți, motiv pentru care este una din valorile de bază ale clinicii.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="px-16 py-24 space-y-16">
-    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 py-12 shadow-2xl bg-yellow-gold-400 bg-opacity-20 rounded-3xl gs_reveal">
-            <div class="col-span-1">
-                <div class="relative overflow-hidden -translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+<section class="py-24 lg:px-16">
+    <div class="relative max-w-screen-xl px-4 mx-auto space-y-8 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 py-8 bg-indigo-400 shadow-2xl md:grid-cols-2 bg-opacity-20 rounded-3xl gs_reveal">
+            <div class="col-span-1 px-8 md:px-0">
+                <div class="relative overflow-hidden md:-translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
                     <img src="https://images.unsplash.com/photo-1599566219227-2efe0c9b7f5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtaWxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&h=800&q=60" alt="">
                 </div>
             </div>
-            <div class="flex flex-col justify-center col-span-1 pr-12">
-                {{ partial:typography/h3 content="Estompare riduri" }}
+            <div class="flex flex-col justify-center col-span-1 p-8 md:p-0 md:pr-12">
+                {{ partial:typography/h3 content="Ștergerea ridurilor de pe gât cu fire PDO" }}
+
                 <div class="mt-4 space-y-4">
                     <p class="text-indigo-900 opacity-75">
-                        Ridurile și pielea uscată sunt consecințe firești ale trecerii timpului, însă prin tehnică minim invazivă, acestea pot fi diminuate, scopul fiind obținerea unui aspect sănătos, hidratat, regenerat al pielii.
+                        Pielea de pe gât își pierde elasticitatea și fermitatea odată cu trecerea timpului, adesea fiind mai afectată decât tenul. Dar, cu ajutorul a 30-40 de fire, efectul de remediere va fi spectaculos.
                     </p>
                      <p class="text-indigo-900 opacity-75">
-                         Estomparea ridurilor se realizează prin injectarea de acid hialuronic.
+                          Intervenția este de scurtă durată (aproximativ jumătate de oră) și nedureroasă (se folosește cremă anestezică).
                      </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 py-12 shadow-2xl rounded-3xl gs_reveal bg-yellow-gold-400 bg-opacity-20">
-            <div class="flex flex-col justify-center col-span-1 pl-12">
-                {{ partial:typography/h3 content="Ștergere riduri periorale" }}
+        <div class="grid grid-cols-1 py-8 shadow-2xl md:grid-cols-2 rounded-3xl gs_reveal bg-yellow-gold-400 bg-opacity-20">
+            <div class="flex flex-col justify-center order-2 col-span-1 p-8 md:p-0 md:pl-12 md:order-1">
+
+                {{ partial:typography/h3 content="Reconstituire mandibulară cu fire de suspensie " }}
+
                 <div class="mt-4 space-y-4">
                     <p class="text-indigo-900 opacity-75">
-                        Ridurile periorale sunt situate deasupra buzei superioare, și sunt cauzate de fumat, expunere frecventă la soare sau încrețirea repetată a buzelor.
+                        Reconstituirea mandibulară cu fire de suspensie este o procedură non-invazivă, sub anestezie locală, care are ca scop repoziționarea și remodelarea volumelor feței, ajutând în același timp la creșterea elasticității prin regenerarea colagenului.
                     </p>
                      <p class="text-indigo-900 opacity-75">
-                         Tratamentul constă în injectare unor cantități mici de acid hialuronic, procedură nedureroasă, de scurtă durată și cu rezultate vizibile.
+                         Această tehnică se realizează cu fire de suspensie (în general se folosesc 6 fire de 6 cm), care conferă un aspect armonios al profilului ce se menține cel puțin 12 luni.
                      </p>
-                      <p class="text-indigo-900 opacity-75">
-                          Efectele adverse constau în edeme și echimoze, care dispar la scurt timp după.
-                      </p>
                 </div>
             </div>
-            <div class="col-span-1">
-                <div class="relative overflow-hidden translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+            <div class="order-1 col-span-1 px-8 md:px-0 md:order-2">
+                <div class="relative overflow-hidden md:translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
                     <img src="https://images.unsplash.com/photo-1567516364473-233c4b6fcfbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=1200&q=80" alt="">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 py-12 shadow-2xl bg-yellow-gold-400 bg-opacity-20 rounded-3xl gs_reveal">
-            <div class="col-span-1">
-                <div class="relative overflow-hidden -translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
+        <div class="grid grid-cols-1 py-12 shadow-2xl md:grid-cols-2 bg-yellow-gold-400 bg-opacity-20 rounded-3xl gs_reveal">
+            <div class="col-span-1 px-4 md:px-0">
+                <div class="relative overflow-hidden md:-translate-x-12 aspect-w-4 aspect-h-4 rounded-3xl">
                     <img src="https://images.unsplash.com/photo-1599566219227-2efe0c9b7f5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtaWxlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&h=800&q=60" alt="">
                 </div>
             </div>
-            <div class="flex flex-col justify-center col-span-1 pr-12">
-                {{ partial:typography/h3 content="Estompare riduri" }}
+            <div class="flex flex-col justify-center col-span-1 p-8 md:p-0 md:pr-12">
+                {{ partial:typography/h3 content="Estompare/ștergere riduri" }}
                 <div class="mt-4 space-y-4">
                     <p class="text-indigo-900 opacity-75">
-                        Ridurile și pielea uscată sunt consecințe firești ale trecerii timpului, însă prin tehnică minim invazivă, acestea pot fi diminuate, scopul fiind obținerea unui aspect sănătos, hidratat, regenerat al pielii.
+                        Ridurile și pielea uscată pot fi diminuate printr-o tehnică minim invazivă: injectarea de acid hialuronic. Se pot corecta astfel ridurile periorale ( situate deasupra buzei superioare), cauzate de fumat, expunere frecventă la soare sau încrețirea repetată a buzelor, șanțurile nazogeniene ( ridurile care se întind de la aripa nazală la colțul gurii), accentuate în urma expresiilor faciale repetate, a pierderii volumului facial sau ca urmare a scăderii producției de colagen și elastină și ridurile de pe gât (cauzate de trecerea timpului și expunere la soare).
                     </p>
                      <p class="text-indigo-900 opacity-75">
-                         Estomparea ridurilor se realizează prin injectarea de acid hialuronic.
+                         Procedurile sunt nedureroase și rapide (aproximativ jumătate de oră).
                      </p>
                 </div>
             </div>

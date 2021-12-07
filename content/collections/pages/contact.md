@@ -9,12 +9,19 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1360cc41-869b-4832-a14b-363726f1c75d
-updated_at: 1638439872
+updated_at: 1638876333
 page_builder:
-    - title: Contact
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."
-      form: contact
-      type: form
-      enabled: true
+  -
+    title: Contact
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s standard dummy text ever.'
+    form: contact
+    type: form
+    enabled: true
+  -
+    type: faqs
+    enabled: true
+  -
+    type: latest_articles
+    enabled: true
 hero_image: /assets/image-5.jpg
 ---

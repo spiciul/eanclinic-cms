@@ -2,17 +2,19 @@
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:gap-x-12">
             <div class="col-span-1">
-                <h3 class="font-serif text-4xl font-normal text-center text-indigo-900 md:text-3xl lg:text-4xl xl:text-6xl md:text-left">Cum te <br/>putem ajuta?</h3>
+                {{ partial:typography/h2 content="Cum te <br/>putem ajuta?" class="text-center md:text-left"}}
 
                 {{ collection:services as="services" }}
-                    <div class="grid grid-cols-1 mt-12 md:grid-cols-2 gap-x-4 gap-y-4 lg:gap-x-8 lg:gap-y-8">
+                    <div class="grid grid-cols-1 mt-12 md:grid-cols-2 gap-x-4 gap-y-4 2xl:gap-x-8 2xl:gap-y-8">
                         {{ services }}
-                            {{ partial:components/service_cell :title="title" :content="excerpt" }}
+                            {{ partial:service/service_cell :title="title" :content="excerpt" }}
                         {{ /services }}
                     </div>
                 {{ /collection:services }}
 
-                <p class="max-w-md mt-8 text-center text-indigo-400 md:text-left 2xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eligendi excepturi facere illo libero sint vero. Aut inventore nisi quia.</p>
+                <p class="max-w-md mt-8 text-center text-indigo-400 md:text-left 2xl:text-lg">
+                    Există numeroase metode prin care îți putem aduce zâmbetul pe buze! De la corectarea ocluziei la estomparea ridurilor, toate procedurile au ca scop estetica și funcționalitatea în armonie cu trăsăturile naturale.
+                </p>
             </div>
 
             <div class="col-span-1">

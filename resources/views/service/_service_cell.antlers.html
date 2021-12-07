@@ -1,0 +1,45 @@
+{{#
+	@name Service
+	@desc For use in service section
+#}}
+
+<div
+x-data="{ show: false}"
+x-cloak
+class="relative flex items-center justify-center h-full px-4 py-6 transition-all duration-200 ease-in border-2 border-indigo-200 group lg:px-12 2xl:h-40 hover:border-2 hover:border-yellow-gold-400 rounded-2xl hover:bg-gradient-to-r from-yellow-gold-400 to-yellow-gold-900">
+    <p class="font-serif text-base text-center text-indigo-900 lg:text-lg 2xl:text-2xl group-hover:text-white">
+        {{ title }}
+    </p>
+    <button
+        @click="show = true"
+        type="button"
+        class="absolute w-8 h-8 p-1 text-indigo-900 transition-colors duration-200 ease-in right-2 top-2 group-hover:text-white">
+            <span class="w-6 h-6 ">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                    fill="currentColor"/>
+                <path d="M11 11h2v6h-2v-6zm0-4h2v2h-2V7z" fill="currentColor"/>
+            </svg>
+            </span>
+    </button>
+
+    <div
+        x-show="show"
+        @click.away="show = false"
+        x-transition:enter="transition ease-out duration-150"
+        x-transition:enter-start="transform opacity-0 scale-95"
+        x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-100"
+        x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95"
+        class="absolute right-0 z-10 w-64 mt-2 bg-white shadow-lg origin-top-center top-2 ring-1 ring-black ring-opacity-5 focus:outline-none rounded-xl"  aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+        <div class="px-4 py-5 space-y-1" role="none">
+            <div class="text-sm leading-snug text-indigo-900">
+                 {{ content }}
+            </div>
+            <a href="{{ url }}" class="inline-flex items-center px-2 py-2 mt-4 -mx-2 text-xs font-medium uppercase text-yellow-gold-900">
+                află mai multe
+            </a>
+        </div>
+    </div>
+</div>

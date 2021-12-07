@@ -3,8 +3,7 @@ sections:
   main:
     display: Main
     fields:
-      -
-        handle: title
+      - handle: title
         field:
           type: text
           required: true
@@ -14,24 +13,35 @@ sections:
           display: Title
           validate:
             - required
-      -
-        import: page_builder
+      - handle: excerpt
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Excerpt
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      - import: page_builder
   seo:
     display: SEO
     fields:
-      -
-        import: seo
+      - import: seo
   sidebar:
     display: Sidebar
     fields:
-      -
-        handle: meta
+      - handle: meta
         field:
           type: section
-          instructions: 'This entry''s meta data.'
+          instructions: "This entry's meta data."
           display: Meta
-      -
-        handle: slug
+      - handle: slug
         field:
           type: slug
           required: true
@@ -41,9 +51,8 @@ sections:
           display: Slug
           validate:
             - required
-            - 'unique_entry_value:{collection},{id},{site}'
-      -
-        handle: parent
+            - "unique_entry_value:{collection},{id},{site}"
+      - handle: parent
         field:
           type: entries
           collections:

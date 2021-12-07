@@ -210,21 +210,26 @@
         @apply fixed top-0 left-0 w-full;
     }
 
-    @variants responsive {
+    .mansonry {
+        column-count: 3;
+        column-gap: 3rem;
+    }
 
-        .mansonry {
-            column-count: 3;
-            column-gap: 3rem;
-        }
+    .mansonry-procedures {
+        column-count: 2;
+        column-gap: 1rem;
+    }
 
+    @screen lg {
         .mansonry-procedures {
             column-count: 3;
             column-gap: 1rem;
         }
 
-        .break-inside {
-            break-inside: avoid;
-        }
+    }
+
+    .break-inside {
+        break-inside: avoid;
     }
 
 }

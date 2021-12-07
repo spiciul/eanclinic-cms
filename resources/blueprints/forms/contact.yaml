@@ -2,8 +2,7 @@ sections:
   main:
     display: Main
     fields:
-      -
-        handle: name
+      - handle: name
         field:
           display: Nume
           type: text
@@ -13,8 +12,7 @@ sections:
           listable: hidden
           input_type: text
           antlers: false
-      -
-        handle: email
+      - handle: email
         field:
           display: Email
           type: text
@@ -26,8 +24,7 @@ sections:
           listable: hidden
           input_type: text
           antlers: false
-      -
-        handle: phone
+      - handle: phone
         field:
           input_type: text
           antlers: false
@@ -36,8 +33,7 @@ sections:
           icon: text
           listable: hidden
           instructions_position: above
-      -
-        handle: message_body
+      - handle: message_body
         field:
           display: Mesaj
           type: textarea
@@ -46,14 +42,13 @@ sections:
           instructions_position: above
           listable: hidden
           antlers: false
-      -
-        handle: consent
+      - handle: consent
         field:
           inline: false
           type: checkboxes
           listable: hidden
-          display: Consent
+          display: Acord
           validate:
             - required
           options:
-            'yes': 'Sunt de acord cu conditiile de utilizare ale site-ului'
+            "yes": "Sunt de acord cu conditiile de utilizare ale site-ului"

@@ -2,13 +2,13 @@
 return [
     // Contact form
     'form_honeypot'                     => 'Fax',
-    'form_mail_body_owner'              => 'A contact form has been sent.',
-    'form_mail_body_sender'             => 'Thanks for your message. We will contact you as soon as possible.',
+    'form_mail_body_owner'              => 'A fost trimis un formular',
+    'form_mail_body_sender'             => 'Va multumim pentru mesaj. Vă vom contacta cât mai curând posibil.',
     'form_mail_closing'                 => 'Kind regards',
     'form_mail_from'                    =>  config('app.name'),
     'form_mail_greeting'                => 'Draga',
     'form_mail_logo'                    => 'https://eanclinic.ro/visuals/branding/eanclinic-logo-top.png',
-    'form_mail_submitted'               => 'Submitted',
+    'form_mail_submitted'               => 'Trimis',
     'form_mail_title'                   => 'Contact form',
     'form_mail_url'                     => config('app.url'),
     'form_send'                         => 'Trimite',
