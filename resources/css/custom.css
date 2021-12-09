@@ -127,6 +127,10 @@
 
 @layer utilities {
 
+    body {
+        text-rendering: optimizeLegibility
+    }
+
     .content > p {
         @apply mb-4 text-lg leading-normal text-indigo-400;
     }

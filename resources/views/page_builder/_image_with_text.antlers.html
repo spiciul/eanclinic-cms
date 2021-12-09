@@ -5,17 +5,20 @@
 #}}
 
 
-<div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 pr-4 md:pr-0 md:grid-cols-2 gap-y-8 gap-x-8 2xl:gap-x-12">
+<div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8 md:mt-12">
+    <div class="grid grid-cols-1 md:pr-0 md:grid-cols-2 gap-x-8 2xl:gap-x-12">
         {{ if desktop_layout =='image first'}}
-            <div class="relative w-full lg:max-w-md xl:max-w-lg 2xl:max-w-2xl gs_reveal gs_reveal_fromLeft">
-                <div class="relative z-20 my-4 overflow-hidden translate-x-4 shadow-xl gs_reveal gs_reveal_fromLeft md:my-0 md:translate-x-0 aspect-w-4 aspect-h-4 rounded-3xl">
+            <div class="relative w-full col-span-1 lg:max-w-md xl:max-w-lg 2xl:max-w-2xl gs_reveal gs_reveal_fromLeft">
+                <div class="relative z-20 m-4 overflow-hidden translate-x-4 shadow-xl md:m-0 md:translate-x-0 aspect-w-4 aspect-h-4 rounded-3xl">
                     {{ partial:components/figure :image="image" :size="md" }}
                 </div>
-                <div class="absolute top-0 left-0 z-10 w-full h-full border border-indigo-400 md:-top-5 md:-left-5 rounded-3xl "></div>
+                <div class="absolute top-0 left-0 z-10 hidden w-full h-full border border-indigo-400 lg:block md:-top-5 md:-left-5 rounded-3xl "></div>
             </div>
-            <div class="col-span-1 -mx-4 md:mx-0">
+            <div class="col-span-1">
                 <div class="flex flex-col items-center justify-center h-full text-center md:items-start md:text-left">
+                    {{ if block:title }}
+                        {{ partial:typography/h4 as="h3" :content="block:title" }}
+                    {{ /if }}
                     <div class="mt-6 xl:mt-8 content">{{ text }}</div>
                 </div>
             </div>
@@ -24,14 +27,17 @@
         {{ if desktop_layout == 'text first'}}
             <div class="order-2 col-span-1 md:order-1">
                 <div class="flex flex-col items-center justify-center h-full text-center md:items-end md:text-right">
+                    {{ if block:title }}
+                        {{ partial:typography/h4 as="h3" :content="block:title" }}
+                    {{ /if }}
                     <div class="mt-6 xl:mt-8 content">{{ text }}</div>
                 </div>
             </div>
-            <div class="relative order-1 w-full col-span-1 md:order-2 lg:max-w-md xl:max-w-lg 2xl:max-w-2xl xl:ml-auto">
-                <div class="relative z-20 my-4 overflow-hidden translate-x-4 shadow-xl gs_reveal gs_reveal_fromRight md:my-0 md:translate-x-0 aspect-w-4 aspect-h-4 rounded-3xl">
+            <div class="relative order-1 w-full col-span-1 md:order-2 lg:max-w-md xl:max-w-lg 2xl:max-w-2xl xl:ml-auto gs_reveal gs_reveal_fromRight">
+                <div class="relative z-20 m-4 overflow-hidden translate-x-4 shadow-xl md:m-0 md:translate-x-0 aspect-w-4 aspect-h-4 rounded-3xl">
                     {{ partial:components/figure :image="image" }}
                 </div>
-                <div class="absolute top-0 right-0 z-10 w-full h-full border border-indigo-400 md:-top-5 md:-right-5 rounded-3xl"></div>
+                <div class="absolute top-0 right-0 z-10 hidden w-full h-full border border-indigo-400 lg:block md:-top-5 md:-right-5 rounded-3xl"></div>
             </div>
         {{ /if}}
 

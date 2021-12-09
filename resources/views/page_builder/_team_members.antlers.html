@@ -1,0 +1,82 @@
+{{#
+	@name reviews
+	@desc The reviews page builder block.
+    @set page.page_builder.reviews
+#}}
+
+
+<section class="py-6 md:py-8 lg:py-12 xl:py-16">
+    <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-x-12">
+            <div class="col-span-1">
+                <div class="flex flex-col items-center justify-center h-full space-y-8 text-center md:items-start md:text-left">
+                    <p class="hidden font-bold text-indigo-400 uppercase md:block"> echipa ean clinic</p>
+
+                    {{ partial:typography/h2 content="Împreună unim estetica cu funcționalitatea"}}
+
+                    <p class="font-normal text-indigo-400"> Avem o echipa multidisciplinara, bazata pe cei mai buni medici/specialiști, printr-un sistem solid, însuflețit de respect și grija pentru oameni.</p>
+
+                </div>
+            </div>
+            {{ collection:team_members as="team_members" }}
+                <div class="col-span-1 mt-8 overflow-hidden md:mt-0">
+                    <div x-data="teamCarousel" class="w-full swiper-container md:h-124" x-ref="teamContainer">
+                        <div class="swiper-wrapper">
+                            {{ team_members }}
+                                <div class="swiper-slide">
+                                    {{ partial:components/team_member }}
+                                </div>
+                            {{ /team_members }}
+                        </div>
+                    </div>
+                </div>
+            {{ /collection:team_members  }}
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+document.addEventListener('alpine:init', () => {
+    Alpine.data('teamCarousel', () => ({
+        init() {
+            const swiper = new Swiper(this.$refs.teamContainer, {
+                direction: getDirection(),
+                loop: true,
+                centeredSlides: true,
+                slideToClickedSlide: true,
+                slidesPerView: getSlidesCount(),
+                spaceBetween: 10,
+
+                on: {
+                    resize: function () {
+                        swiper.changeDirection(getDirection());
+                    },
+                },
+            });
+
+            function getDirection() {
+                var windowWidth = window.innerWidth;
+                var direction = window.innerWidth <= 760 ? 'horizontal' : 'vertical';
+
+                return direction;
+            }
+
+            function getSlidesCount()
+            {
+                var windowWidth = window.innerWidth;
+                var count = 1;
+
+                if(windowWidth <= 480) {
+                    count = 2;
+                } else if(480 < windowWidth <= 760 ) {
+                    count = 3;
+                } else if(windowWidth > 760) {
+                    count = 4;
+                }
+
+                return count;
+            }
+        }
+    }))
+})
+</script>

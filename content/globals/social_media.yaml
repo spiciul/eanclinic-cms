@@ -20,4 +20,4 @@ data:
       handle: eanclinic
       prefix: 'https://youtube.com/'
       type: youtube
-      enabled: true
+      enabled: false

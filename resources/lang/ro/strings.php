@@ -9,7 +9,7 @@ return [
     'form_mail_greeting'                => 'Draga',
     'form_mail_logo'                    => 'https://eanclinic.ro/visuals/branding/eanclinic-logo-top.png',
     'form_mail_submitted'               => 'Trimis',
-    'form_mail_title'                   => 'Contact form',
+    'form_mail_title'                   => 'Formular contact',
     'form_mail_url'                     => config('app.url'),
     'form_send'                         => 'Trimite',
     'form_success'                      => 'Vă mulțumim, am primit mesajul dvs. și vă vom contacta în cel mai scurt timp posibil.',
@@ -17,16 +17,16 @@ return [
     // Cookie banner
     'cookie_title'                      => 'Cookies 🍪',
     'cookie_functional'                 => 'Functional',
-    'cookie_functional_explanation'     => 'First party cookies needed for the website to function. These can\'t be turned off.',
+    'cookie_functional_explanation'     => 'Aceste Cookie-uri sunt necesare pentru ca site-ul să funcționeze. Acestea nu pot fi dezactivate.',
     'cookie_analytics'                  => 'Analytics',
-    'cookie_analytics_explanation'      => 'Third party cookies, not needed if we cared.',
-    'cookie_ads'                        => 'Ads & tracking',
+    'cookie_analytics_explanation'      => 'Cookie-uri de la terți, nu sunt necesare dacă ne pasă.',
+    'cookie_ads'                        => 'Reclame și urmărire',
     'cookie_ads_explanation'            => 'Third party cookies absolutely terrible for privacy, but we don\'t give a sh*t.',
     'cookie_accept'                     => 'Accept',
-    'cookie_ignore'                     => 'Ignore',
-    'cookie_explanation'                => 'This site uses cookies that need consent.',
-    'cookie_learn_more'                 => 'Learn more',
-    'cookie_reset_consent'              => 'Reset cookie consent',
+    'cookie_ignore'                     => 'Ignora',
+    'cookie_explanation'                => 'Acest site folosește cookie-uri care necesită consimțământ.',
+    'cookie_learn_more'                 => 'Afla mai multe',
+    'cookie_reset_consent'              => 'Resetați consimțământul pentru cookie-uri',
 
     // Footer
     'on'                                => 'on',
@@ -56,8 +56,8 @@ return [
     'previous'                          => 'previous',
 
     // Search
-    'search'                            => 'Search',
-    'search_no_results'                 => 'No results found',
+    'search'                            => 'Cauta',
+    'search_no_results'                 => 'Cautarea nu a generat niciun rezultat',
     'search_results_for'                => 'Results for',
 
     // Social images

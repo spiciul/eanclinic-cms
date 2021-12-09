@@ -8,11 +8,13 @@
         <div class="grid gap-8 fluid-container md:grid-cols-12">
             <div class="md:col-start-4 md:col-span-6">
                 <div class="flex flex-col justify-center h-full text-center">
-                    {{ partial:typography/h2 content="Programare Ean Clinic" }}
+                    {{ partial:typography/h2 content="Programare" }}
 
-                    <p class="mt-6 font-normal text-indigo-400">Folositi formularul de mai jos pentru prgramare daca considerati ca este mai usor!</p>
+                    <p class="mt-6 font-normal text-indigo-400">
+                        Programeaza un consult pentru evaluarea situației și colectarea tututor informațiilor care vor fi de ajutor în stabilirea unui plan de tratament.
+                    </p>
 
-                    <div class="flex flex-col space-y-6 md:flex-row md:justify-center md:space-x-6">
+                    <div class="flex flex-col space-y-6 md:justify-center ">
                         {{ if configuration:email_address }}
                             <a href="mailto:{{ configuration:email_address }}" class="flex items-center justify-center mt-6 hover:text-yellow-gold-900" rel="noopener" target="_blank" >
                                 <span class="mr-2">
@@ -33,13 +35,23 @@
                                 {{ configuration:phone_number}}
                             </a>
                         {{ /if}}
+                        <a href="#" class="flex items-center justify-center mt-6 hover:text-yellow-gold-900" rel="noopener" target="_blank" >
+                            <span class="mr-1">
+                               <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </span>
+                            Strada Padurii nr. 14, Iasi
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="pb-12 gradient-light-indigo">
+
+<section class="pb-16 gradient-light-indigo">
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

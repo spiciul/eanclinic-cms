@@ -11,26 +11,26 @@
         </div>
         <div class="relative -mt-12 ">
             <div class="max-w-2xl mx-auto text-center lg:max-w-4xl">
-                {{ partial:typography/h2 :content="title" }}
+                {{ partial:typography/h2 as="h1" :content="title" }}
                 <div class="mt-4 text-base content">{{ excerpt}}</div>
             </div>
 
-            <dl class="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:max-w-none lg:grid-cols-2 lg:gap-x-8">
+            <dl class="grid max-w-2xl grid-cols-1 mx-auto mt-16 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:max-w-none lg:grid-cols-2 lg:gap-x-12">
                 <div class="pt-4">
-                    <dt class="font-serif text-2xl font-bold text-indigo-900">Tratamentul ortodontic</dt>
-                    <dd class="mt-2 leading-normal text-indigo-900 opacity-75">Tratamentul ortodontic rezolvă o gamă largă de malocluzii: de la dinți înghesuiți sau foarte spațiați, la dinți rotați, diasteme sau treme, și inclusiv poate ajuta la închiderea spațiilor post-extracționale sau la crearea de spațiu pentru a permite erupția unor dinți noi. Pentru a putea fi asigurat un raport corect între maxilar și mandibulă, este necesară aplicarea aparatului dentar pe ambele arcade.</dd>
+                    <dt class="font-serif text-3xl font-bold text-indigo-900">Tratamentul <br/> ortodontic</dt>
+                    <dd class="mt-3 leading-normal text-indigo-900 opacity-75">Tratamentul ortodontic rezolvă o gamă largă de malocluzii: de la dinți înghesuiți sau foarte spațiați, la dinți rotați, diasteme sau treme, și inclusiv poate ajuta la închiderea spațiilor post-extracționale sau la crearea de spațiu pentru a permite erupția unor dinți noi. Pentru a putea fi asigurat un raport corect între maxilar și mandibulă, este necesară aplicarea aparatului dentar pe ambele arcade.</dd>
                 </div>
                 <div class="pt-4">
-                    <dt class="font-serif text-2xl font-bold text-indigo-900">Condiții pentru reușita </dt>
-                    <dd class="mt-2 leading-normal text-indigo-900 opacity-75">Înainte de a începe tratamentul, este necesară tratarea tuturor leziunilor carioase, efectuarea eventualelor tratamente parodontale și, desigur, igienizare și detartraj. Astfel, sunt asigurate cele mai bune condiții pentru reușita tratamentului.</dd>
+                    <dt class="font-serif text-3xl font-bold text-indigo-900">Condiții <br/> pentru reușita </dt>
+                    <dd class="mt-3 leading-normal text-indigo-900 opacity-75">Înainte de a începe tratamentul, este necesară tratarea tuturor leziunilor carioase, efectuarea eventualelor tratamente parodontale și, desigur, igienizare și detartraj. Astfel, sunt asigurate cele mai bune condiții pentru reușita tratamentului.</dd>
                 </div>
                  <div class="pt-4">
-                    <dt class="font-serif text-2xl font-bold text-yellow-gold-900">Tratamentul nu doare! </dt>
-                    <dd class="mt-2 leading-normal text-indigo-900 opacity-75">Aplicarea brackeților este complet lipsită de durere, iar activarea aparatului presupune doar un disconfort la început, însă care se poate trata ușor cu antiinflamatoare, asta dacă nu este lăsat să dispară de la sine în doar câteva zile.</dd>
+                    <dt class="font-serif text-3xl font-bold text-yellow-gold-900">Tratamentul <br/> nu doare! </dt>
+                    <dd class="mt-3 leading-normal text-indigo-900 opacity-75">Aplicarea brackeților este complet lipsită de durere, iar activarea aparatului presupune doar un disconfort la început, însă care se poate trata ușor cu antiinflamatoare, asta dacă nu este lăsat să dispară de la sine în doar câteva zile.</dd>
                 </div>
                   <div class="pt-4">
-                    <dt class="font-serif text-2xl font-bold text-indigo-900">Durata tratamentului  </dt>
-                    <dd class="mt-2 leading-normal text-indigo-900 opacity-75">Durata tratamentului diferă de la caz la caz, fiind mai mică în cazul unor pacienți mai tineri sau pentru malocluzii ușoare. În general, perioada este de 2-3 ani, dar sunt și situații în care tratamentul poate avea durată mai lungă sau este realizat în corelație cu chirurgie ortognată sau implantologie/chirurgie oro-maxilo-facială și deci se întinde pe parcursul mai multor ani. </dd>
+                    <dt class="font-serif text-3xl font-bold text-indigo-900">Durata <br/>tratamentului  </dt>
+                    <dd class="mt-3 leading-normal text-indigo-900 opacity-75">Durata tratamentului diferă de la caz la caz, fiind mai mică în cazul unor pacienți mai tineri sau pentru malocluzii ușoare. În general, perioada este de 2-3 ani, dar sunt și situații în care tratamentul poate avea durată mai lungă sau este realizat în corelație cu chirurgie ortognată sau implantologie/chirurgie oro-maxilo-facială și deci se întinde pe parcursul mai multor ani. </dd>
                 </div>
             </dl>
         </div>
@@ -39,24 +39,24 @@
 
 <section class="relative py-16 gradient-light-indigo">
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
+        <div class="grid items-center grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2 lg:gap-x-12">
             <div>
                 {{ partial:typography/h2 content="Tipuri aparat dentar" }}
                 <p class="mt-4 text-gray-500">Există mai multe tipuri de aparat dentar, potrivite pentru fiecare caz în parte.</p>
 
                 <dl class="grid grid-cols-1 mt-16 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-                    <div class="pt-4 border-t border-opacity-50 border-yellow-gold-900">
+                    <div class="pt-4">
                     <dt class="font-bold text-indigo-900">Aparatul metalic</dt>
                     <dd class="mt-2 text-sm leading-normal text-indigo-900 opacity-75">Aparatul metalic este cel mai convenabil ca preț, fiind și foarte popular și datorită faptului că este rezistent și eficient</dd>
                     </div>
 
-                    <div class="pt-4 border-t border-opacity-50 border-yellow-gold-900">
+                    <div class="pt-4">
                     <dt class="font-bold text-indigo-900"> Aparatele dentare invizibile (ceramic sau safir)</dt>
                     <dd class="mt-2 text-sm leading-normal text-indigo-900 opacity-75">Aparatele dentare invizibile (ceramic sau safir) au un preț mai ridicat și un timp mai îndelungat de purtare, însă asigură estetica dorită celor care vor să poarte un aparat dentar invizbil.</dd>
                     </div>
                 </dl>
             </div>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-12">
                 <div class="relative">
                     <div class="relative z-20 my-4 translate-x-4 shadow-xl gs_reveal gs_reveal_fromLeft md:my-0 md:translate-x-0 aspect-w-5 aspect-h-5 rounded-2xl">
                         <img src="https://images.unsplash.com/photo-1473232117216-c950d4ef2e14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000&q=80" alt="" class="bg-gray-100 rounded-2xl">
@@ -64,7 +64,7 @@
                     <div class="absolute top-0 left-0 z-10 w-full h-full border border-opacity-50 border-yellow-gold-900 md:-top-3 md:-left-3 rounded-2xl "></div>
                 </div>
                     <div class="relative">
-                        <div class="relative z-20 my-4 translate-x-4 shadow-xl gs_reveal gs_reveal_fromLeft md:my-0 md:translate-x-0 aspect-w-5 aspect-h-5 rounded-2xl">
+                        <div class="relative z-20 my-4 translate-x-4 shadow-xl gs_reveal md:my-0 md:translate-x-0 aspect-w-5 aspect-h-5 rounded-2xl">
                             <img src="https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000&q=80" alt="" class="bg-gray-100 rounded-2xl">
                         </div>
                         <div class="absolute top-0 left-0 z-10 w-full h-full border border-opacity-50 border-yellow-gold-900 md:-top-3 md:-left-3 rounded-2xl "></div>
@@ -76,7 +76,7 @@
                         <div class="absolute top-0 left-0 z-10 w-full h-full border border-opacity-50 border-yellow-gold-900 md:-top-3 md:-left-3 rounded-2xl "></div>
                     </div>
                 <div class="relative">
-                    <div class="relative z-20 my-4 translate-x-4 shadow-xl gs_reveal gs_reveal_fromLeft md:my-0 md:translate-x-0 aspect-w-5 aspect-h-5 rounded-2xl">
+                    <div class="relative z-20 my-4 translate-x-4 shadow-xl gs_reveal md:my-0 md:translate-x-0 aspect-w-5 aspect-h-5 rounded-2xl">
                         <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=1000&q=80" alt="" class="bg-gray-100 rounded-2xl">
                     </div>
                     <div class="absolute top-0 left-0 z-10 w-full h-full border border-opacity-50 border-yellow-gold-900 md:-top-3 md:-left-3 rounded-2xl "></div>
@@ -86,10 +86,10 @@
     </div>
 </section>
 
-<section class="py-6 md:py-8 lg:py-12 xl:py-16 gradient-light-indigo">
+<section class="gradient-light-indigo">
 
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto mb-24 text-center">
+        <div class="max-w-3xl mx-auto mb-12 text-center xl:mb-24">
             {{ partial:typography/h4 content="Care sunt etapele care trebuie parcurse pentru a ajunge la un zâmbet frumos și complet?"}}
         </div>
     </div>

@@ -49,3 +49,8 @@ fields:
           intructions: faqs.yaml
           fields:
             - import: faqs
+        team_members:
+          display: Team members
+          intructions: team_members.yaml
+          fields:
+            - import: team_members

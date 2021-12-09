@@ -7,48 +7,69 @@
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center">
             <p class="hidden font-bold text-indigo-400 uppercase md:block"> ean clinic </p>
-            {{ partial:typography/h2 :content="title" }}
+            {{ partial:typography/h2 as="h1" :content="title" }}
             <div class="mt-6 content">{{ excerpt}}</div>
         </div>
     </div>
 </section>
 
-<section class="py-6 md:py-8 lg:py-12 xl:py-16 gradient-light-indigo">
+<section class="py-6 lg:py-12 gradient-light-indigo">
     <div class="relative max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 md:gap-x-16">
-            <div class="flex flex-col justify-center order-2 col-span-1 mt-6 space-y-4 leading-relaxed text-indigo-900 md:mt-0 md:order-1">
-                <p>Chirurgia dento-alveolară și oro-maxilo-facială redau funcțiile și estetica, astfel încât pacienții să aibă cel mai bun rezultat posibil și o dantură frumoasă, armonioasă, cu un aspect natural.
-                </p>
-                <p>Există numeroase argumente care vin în sprijinul alegerii implanturilor dentare.
-                </p>
-                <p> În primul rând, prin inserția de implanturi se oprește sau, dacă se acționează la timp, se previne resorbția osoasă. De asemenea, pot fi prevenite migrația dinților învecinați și antagoniști și retracția gingiei.</p>
-                <p class="font-bold text-yellow-gold-900">
-                    În plus, prin alegerea acestei soluții este protejată dantura existentă, deoarece nu sunt necesare intervenții asupra dinților sănătoși.
-                </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 ">
+            <div class="order-2 col-span-1 mt-12 space-y-12 md:mt-0 md:order-1">
+                <div class="md:ml-auto md:max-w-64 lg:max-w-sm ">
+                    <div class="block overflow-hidden shadow-xl gs_reveal aspect-w-4 aspect-h-3 rounded-3xl">
+                        {{ partial:components/picture image="/assets/eanclinic-implantologie-1.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+                <div class="max-w-md mx-auto ">
+                    <div class="block overflow-hidden shadow-xl gs_reveal aspect-w-4 aspect-h-3 rounded-3xl">
+                        {{ partial:components/picture image="/assets/eanclinic-chirurgie-1.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col order-1 col-span-1 space-y-4 md:space-x-12 md:space-y-8 md:order-2">
-                <figure class="block max-w-md overflow-hidden shadow-lg aspect-h-2 aspect-w-4 rounded-2xl gs_reveal gs_reveal_fromRight">
-                    <img
-                        data-src="/assets/eanclinic-interior-4_860x.jpg"
-                        data-srcset="/assets/eanclinic-interior-4_320x.jpg 260w, /assets/eanclinic-interior-4_600x.jpg 480w, /assets/eanclinic-interior-4_860x.jpg 720w, /assets/eanclinic-interior-4_1200x.jpg 960w, /assets/eanclinic-interior-4_1200x.jpg 1440w, /assets/eanclinic-interior-4_1200x.jpg 1920w"
-                        alt="{{ configuration:copyright_name ?? config:app:name }}"
-                        data-sizes="auto"
-                        class="object-cover transition duration-300 ease-in img lazyload"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </figure>
-                <figure class="block max-w-md overflow-hidden shadow-lg aspect-h-2 aspect-w-4 rounded-2xl gs_reveal gs_reveal_fromRight">
-                    <img
-                        data-src="/assets/eanclinic-interior-4_860x.jpg"
-                        data-srcset="/assets/eanclinic-interior-4_320x.jpg 260w, /assets/eanclinic-interior-4_600x.jpg 480w, /assets/eanclinic-interior-4_860x.jpg 720w, /assets/eanclinic-interior-4_1200x.jpg 960w, /assets/eanclinic-interior-4_1200x.jpg 1440w, /assets/eanclinic-interior-4_1200x.jpg 1920w"
-                        alt="{{ configuration:copyright_name ?? config:app:name }}"
-                        data-sizes="auto"
-                        class="object-cover transition duration-300 ease-in img lazyload"
-                        loading="lazy"
-                        decoding="async"
-                    />
-                </figure>
+            <div class="order-1 col-span-1 md:order-2 delayed-section">
+                <div class="flex flex-col pt-8 space-y-6 md:pt-16 lg:pt-24 lg:space-y-8 text-wrapper">
+
+                    {{ partial:typography/h3 as="h2" content="Chirurgia dento-alveolară și oro-maxilo-facială " }}
+
+                    <p class="mt-6 font-normal text-indigo-400 xl:mt-8">
+                        Chirurgia dento-alveolară și oro-maxilo-facială redau funcțiile și estetica, astfel încât pacienții să aibă cel mai bun rezultat posibil și o dantură frumoasă, armonioasă, cu un aspect natural.
+                    </p>
+                    <p class="mt-6 font-normal text-indigo-400 xl:mt-8">
+                        Îmi plac provocările, așa că sunt dedicat cazurilor mai dificile, cu retracție osoasă accentuată, care îmi pun la încercare aptitudinile și experiența.
+                    </p>
+                    <p class="mt-6 font-normal text-indigo-400 xl:mt-8">
+                        Vreau să le ofer pacienților care și-au pierdut speranța o șansă în plus și încrederea că își vor putea recăpăta funcțiile în totalitate.
+                    </p>
+                </div>
+            </div>
+        </div>
+         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-12 ">
+            <div class="col-span-1 delayed-section">
+                <div class="flex flex-col pt-8 space-y-6 md:pt-16 lg:pt-24 lg:space-y-8 text-wrapper">
+
+                    {{ partial:typography/h3 as="h2" content="Implanturile dentare" }}
+
+                    <p class="mt-6 font-normal text-indigo-400 xl:mt-8">
+                        Există numeroase argumente care vin în sprijinul alegerii implanturilor dentare. În primul rând, prin inserția de implanturi se oprește sau, dacă se acționează la timp, se previne resorbția osoasă. De asemenea, pot fi prevenite migrația dinților învecinați și antagoniști și retracția gingiei. În plus, prin alegerea acestei soluții este protejată dantura existentă, deoarece nu sunt necesare intervenții asupra dinților sănătoși.
+                    </p>
+                    <p class="mt-6 font-normal text-indigo-400 xl:mt-8">
+                        De multe ori, intervențiile chirurgicale pentru inserarea implanturilor sunt ușoare, însă există cazuri speciale, complexe, care necesită și mai multă pregătire, implanturi personalizate și creativitate.
+                    </p>
+                </div>
+            </div>
+            <div class="col-span-1 mt-12 space-y-12 md:mt-0 ">
+                <div class="md:mr-auto md:max-w-64 lg:max-w-sm ">
+                    <div class="block overflow-hidden shadow-xl gs_reveal aspect-w-4 aspect-h-3 rounded-3xl">
+                        {{ partial:components/picture image="/assets/eanclinic-implantologie-1.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
+                <div class="max-w-md mx-auto ">
+                    <div class="block overflow-hidden shadow-xl gs_reveal aspect-w-4 aspect-h-3 rounded-3xl">
+                        {{ partial:components/picture image="/assets/eanclinic-implantologie-2.jpg" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

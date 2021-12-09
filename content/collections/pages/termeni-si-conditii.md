@@ -1,7 +1,8 @@
 ---
 id: bb8a0284-0af3-4b8e-b702-e689388e2fce
 blueprint: page
-title: 'Termeni si conditii'
+title: "Termeni si conditii"
+template: terms
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry

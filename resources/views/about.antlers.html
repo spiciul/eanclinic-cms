@@ -10,7 +10,7 @@
             <div class="col-span-1">
                 <div class="flex flex-col justify-center h-full md:space-y-8">
                     <p class="hidden font-bold text-indigo-400 uppercase md:block"> despre noi </p>
-                    {{ partial:typography/h2 content="Siguranța actului medical, la cea mai înaltă calitate." }}
+                    {{ partial:typography/h2 as="h1" content="Siguranța actului medical, la cea mai înaltă calitate." }}
                     <p class="mt-6 font-normal text-indigo-400"> Aceasta este misiunea EAN Clinic.</p>
                 </div>
             </div>
@@ -40,7 +40,9 @@
             </div>
             <div class="order-1 col-span-1 md:order-2 delayed-section">
                 <div class="flex flex-col max-w-md pt-8 mx-auto space-y-6 md:pt-16 lg:pt-24 lg:space-y-8 text-wrapper">
-                    <h3 class="font-serif text-4xl font-normal text-indigo-900 xl:text-5xl">Viziunea noastră</h3>
+
+                    {{ partial:typography/h2 content="Viziunea noastră" }}
+
                     <p class="mt-6 font-normal text-indigo-400 xl:mt-8">
                         EAN Clinic livreaza experienta unica de cel mai bun camarad in drumul spre sanatate.
                     </p>
@@ -69,7 +71,9 @@
                            {{ svg:idea }}
                         </div>
                         <div class="space-y-2 md:space-y-4">
-                            <h4 class="font-serif text-2xl text-indigo-900 md:text-3xl lg:text-4xl">Inovația</h4>
+
+                            {{ partial:typography/h4 content="Inovația" }}
+
                             <p class="text-base text-indigo-400">Îmbunatatim si infuzam cu energie vietile celor pe care ii tratam.</p>
                         </div>
                     </div>
@@ -78,7 +82,9 @@
                             {{ svg:talent }}
                         </div>
                         <div class="space-y-2 md:space-y-4">
-                            <h4 class="font-serif text-2xl text-indigo-900 md:text-3xl lg:text-4xl">Excelența</h4>
+
+                            {{ partial:typography/h4 content="Excelența" }}
+
                             <p class="text-base text-indigo-400">Servicii de cea mai inalta calitate pot fi livrate doar cu efort din partea noastra, experienta cu pacientul am imbunatatit-o constant incepand cu anul 2009.</p>
                         </div>
                     </div>
@@ -94,12 +100,12 @@
         </div>
         <div class="grid grid-cols-1 py-12 md:grid-cols-2 gap-x-12">
             <div class="col-span-1 space-y-12 lg:space-y-16">
-                <div class="md:ml-auto max-w-64 lg:max-w-sm">
+                <div class="md:ml-auto md:max-w-64 lg:max-w-sm">
                     <div class="block overflow-hidden shadow-xl gs_reveal aspect-w-4 aspect-h-3 rounded-3xl">
                         {{ partial:components/picture :image="image_9" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
                     </div>
                 </div>
-                <div class="max-w-md mx-auto">
+                <div class="lg:max-w-md lg:mx-auto">
                     <div class="block overflow-hidden shadow-xl gs_reveal aspect-w-4 aspect-h-3 rounded-3xl">
                         {{ partial:components/picture :image="image_10" cover="true" sizes="(min-width: 768px) 35vw, 90vw" }}
                     </div>
